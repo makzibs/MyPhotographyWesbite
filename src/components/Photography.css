@@ -1,0 +1,151 @@
+.photography {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.photography-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.photography-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.photography-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.category-filter button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.category-filter button:hover {
+  background-color: #f0f0f0;
+}
+
+.category-filter button.active {
+  background-color: #4cc9f0;
+  color: white;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.photo-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-10px);
+}
+
+.photo-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.photo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-item:hover .photo-image img {
+  transform: scale(1.1);
+}
+
+.photo-info {
+  padding: 1.5rem;
+}
+
+.photo-info h3 {
+  margin: 0 0 0.5rem;
+  color: #1a1a2e;
+}
+
+.photo-category {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.photo-info p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.photography-contact {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.photography-contact h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.photography-contact p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-btn {
+  background-color: #4cc9f0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #3ab7dc;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .photography-contact {
+    padding: 2rem;
+  }
+}
