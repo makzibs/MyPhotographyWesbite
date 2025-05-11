@@ -49,6 +49,7 @@ const CategoryDetail = () => {
         switch(categoryId) {
           case 'category1':
             categoryImages = [
+              { src: require('../assets/images/category1/heroImage.jpg'), alt: 'Studio Portraits Hero' },
               { src: require('../assets/images/category1/1.1.jpg'), alt: 'Studio Portrait 1' },
               { src: require('../assets/images/category1/1.2.jpg'), alt: 'Studio Portrait 2' },
               { src: require('../assets/images/category1/1.3.jpg'), alt: 'Studio Portrait 3' },
@@ -58,6 +59,7 @@ const CategoryDetail = () => {
             break;
           case 'category2':
             categoryImages = [
+              { src: require('../assets/images/category2/heroImage.jpg'), alt: 'Sunflower Portraits Hero' },
               { src: require('../assets/images/category2/2.1.jpg'), alt: 'Sunflower Portrait 1' },
               { src: require('../assets/images/category2/2.2.jpg'), alt: 'Sunflower Portrait 2' },
               { src: require('../assets/images/category2/2.3.jpg'), alt: 'Sunflower Portrait 3' }
@@ -65,13 +67,15 @@ const CategoryDetail = () => {
             break;
           case 'category3':
             categoryImages = [
-              { src: require('../assets/images/category3/3.1.jpg'), alt: 'One-day Dark Ambient 1' },
-              { src: require('../assets/images/category3/3.2.jpg'), alt: 'One-day Dark Ambient 2' }
+              { src: require('../assets/images/category3/heroImage.jpg'), alt: 'Dark Ambience Hero' },
+              { src: require('../assets/images/category3/3.1.jpg'), alt: 'Dark Ambience 1' },
+              { src: require('../assets/images/category3/3.2.jpg'), alt: 'Dark Ambience 2' }
             ];
             break;
           case 'category4':
             try {
               categoryImages = [
+                { src: require('../assets/images/category4/heroImage.jpg'), alt: 'Vibrant City Hero' },
                 { src: require('../assets/images/category4/4.1.jpg'), alt: 'Vibrant City 1' },
                 { src: require('../assets/images/category4/4.2.jpg'), alt: 'Vibrant City 2' },
                 { src: require('../assets/images/category4/4.3.jpg'), alt: 'Vibrant City 3' },
@@ -92,6 +96,7 @@ const CategoryDetail = () => {
           case 'category5':
             try {
               categoryImages = [
+                { src: require('../assets/images/category5/heroImage.jpg'), alt: 'Sunny Portraits Hero' },
                 { src: require('../assets/images/category5/5.1.jpg'), alt: 'Sunny Portrait 1' },
                 { src: require('../assets/images/category5/5.2.jpg'), alt: 'Sunny Portrait 2' },
                 { src: require('../assets/images/category5/5.3.jpg'), alt: 'Sunny Portrait 3' },
@@ -109,6 +114,7 @@ const CategoryDetail = () => {
           case 'category6':
             try {
               categoryImages = [
+                { src: require('../assets/images/category6/heroImage.jpg'), alt: 'Collections from now and then Hero' },
                 { src: require('../assets/images/category6/6.1.jpg'), alt: 'Collection 1' },
                 { src: require('../assets/images/category6/6.2.jpg'), alt: 'Collection 2' },
                 { src: require('../assets/images/category6/6.3.jpg'), alt: 'Collection 3' },
@@ -130,6 +136,7 @@ const CategoryDetail = () => {
           case 'category7':
             try {
               categoryImages = [
+                { src: require('../assets/images/category7/heroImage.jpg'), alt: 'Lake and Nature Hero' },
                 { src: require('../assets/images/category7/7.1.jpg'), alt: 'Lake and Nature 1' },
                 { src: require('../assets/images/category7/7.2.jpg'), alt: 'Lake and Nature 2' }
               ];
@@ -144,6 +151,7 @@ const CategoryDetail = () => {
           case 'category8':
             try {
               categoryImages = [
+                { src: require('../assets/images/category8/heroImage.jpg'), alt: 'Sunset Hero' },
                 { src: require('../assets/images/category8/8.1.jpg'), alt: 'Sunset 1' }
               ];
             } catch (error) {
@@ -156,7 +164,8 @@ const CategoryDetail = () => {
           case 'category9':
             try {
               categoryImages = [
-                { src: require('../assets/images/category9/9.1.jpg'), alt: 'Child Portrait 1' }
+                { src: require('../assets/images/category9/heroImage.jpg'), alt: 'Impromptu Portrait Hero' },
+                { src: require('../assets/images/category9/9.1.jpg'), alt: 'Impromptu Portrait 1' }
               ];
             } catch (error) {
               console.error('Error loading category9 images:', error);
@@ -168,6 +177,7 @@ const CategoryDetail = () => {
           case 'category10':
             try {
               categoryImages = [
+                { src: require('../assets/images/category10/heroImage.jpg'), alt: 'Let kids have fun Hero' },
                 { src: require('../assets/images/category10/10.1.jpg'), alt: 'Kids having fun 1' }
               ];
             } catch (error) {
@@ -180,6 +190,7 @@ const CategoryDetail = () => {
           case 'category11':
             try {
               categoryImages = [
+                { src: require('../assets/images/category11/heroImage.jpg'), alt: 'Harsh Edits Hero' },
                 { src: require('../assets/images/category11/11.1.jpg'), alt: 'Harsh Edit 1' },
                 { src: require('../assets/images/category11/11.2.jpg'), alt: 'Harsh Edit 2' },
                 { src: require('../assets/images/category11/11.3.jpg'), alt: 'Harsh Edit 3' }
@@ -195,6 +206,7 @@ const CategoryDetail = () => {
           case 'category12':
             try {
               categoryImages = [
+                { src: require('../assets/images/category12/heroImage.jpg'), alt: 'Wedding Shots Hero' },
                 { src: require('../assets/images/category12/12.1.jpg'), alt: 'Wedding Shots 1' },
                 { src: require('../assets/images/category12/12.2.jpg'), alt: 'Wedding Shots 2' },
                 { src: require('../assets/images/category12/12.3.jpg'), alt: 'Wedding Shots 3' },
@@ -211,6 +223,7 @@ const CategoryDetail = () => {
           case 'category13':
             try {
               categoryImages = [
+                { src: require('../assets/images/category13/heroImage.jpg'), alt: 'Home Food Hero' },
                 { src: require('../assets/images/category13/13.1.jpg'), alt: 'Home Food 1' },
                 { src: require('../assets/images/category13/13.2.jpg'), alt: 'Home Food 2' }
               ];
@@ -225,6 +238,7 @@ const CategoryDetail = () => {
           case 'category14':
             try {
               categoryImages = [
+                { src: require('../assets/images/category14/heroImage.jpg'), alt: 'Quick Family portrait Hero' },
                 { src: require('../assets/images/category14/14.1.jpg'), alt: 'Quick Family portrait 1' }
               ];
             } catch (error) {
@@ -237,6 +251,7 @@ const CategoryDetail = () => {
           case 'category15':
             try {
               categoryImages = [
+                { src: require('../assets/images/category15/heroImage.jpg'), alt: 'Guys in Pasila street Hero' },
                 { src: require('../assets/images/category15/15.1.jpg'), alt: 'Guys in Pasila street 1' },
                 { src: require('../assets/images/category15/15.2.jpg'), alt: 'Guys in Pasila street 2' }
               ];
@@ -251,6 +266,7 @@ const CategoryDetail = () => {
           case 'category16':
             try {
               categoryImages = [
+                { src: require('../assets/images/category16/heroImage.jpg'), alt: 'Sunset Portraits Hero' },
                 { src: require('../assets/images/category16/16.1.jpg'), alt: 'Sunset Portrait 1' },
                 { src: require('../assets/images/category16/16.2.jpg'), alt: 'Sunset Portrait 2' },
                 { src: require('../assets/images/category16/16.3.jpg'), alt: 'Sunset Portrait 3' },
@@ -267,6 +283,7 @@ const CategoryDetail = () => {
           case 'category17':
             try {
               categoryImages = [
+                { src: require('../assets/images/category17/heroImage.jpg'), alt: 'Meevan Weaning Ceremony Hero' },
                 { src: require('../assets/images/category17/17.1.jpg'), alt: 'Meevan Weaning Ceremony 1' },
                 { src: require('../assets/images/category17/17.2.jpg'), alt: 'Meevan Weaning Ceremony 2' },
                 { src: require('../assets/images/category17/17.3.jpg'), alt: 'Meevan Weaning Ceremony 3' },
@@ -283,8 +300,9 @@ const CategoryDetail = () => {
           case 'category18':
             try {
               categoryImages = [
-                { src: require('../assets/images/category18/18.1.jpg'), alt: 'Robin Birthday 1' },
-                { src: require('../assets/images/category18/18.2.jpg'), alt: 'Robin Birthday 2' }
+                { src: require('../assets/images/category18/heroImage.jpg'), alt: "Robin's Birthday Hero" },
+                { src: require('../assets/images/category18/18.1.jpg'), alt: "Robin's Birthday 1" },
+                { src: require('../assets/images/category18/18.2.jpg'), alt: "Robin's Birthday 2" }
               ];
             } catch (error) {
               console.error('Error loading category18 images:', error);
@@ -352,7 +370,7 @@ const CategoryDetail = () => {
     <div className="category-detail">
       <div className="category-header">
         <h1>{categoryName}</h1>
-        <Link to="/" className="back-link">Back to Categories</Link>
+        <Link to="/categories" className="back-link">Back to Categories</Link>
       </div>
       
       <div className="image-grid">

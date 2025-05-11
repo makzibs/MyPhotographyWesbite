@@ -9,6 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Collection from './components/Collection';
 import CategoryDetail from './components/CategoryDetail';
+import CategoriesGrid from './components/CategoriesGrid';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/collection/:type" element={<Collection />} />
             <Route path="/category/:categoryId" element={<CategoryDetail />} />
+            <Route path="/categories" element={<CategoriesGrid />} />
           </Routes>
         </main>
         <Footer />

@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <h1 className="logo-text">MAKZIBS<span className="in-text">in</span><span className="photo-text">photo</span></h1>
+          <h1 className="logo-text">MAKZIBS <span className="photo-text">photography</span></h1>
         </Link>
       </div>
       <nav className="nav">

@@ -1,183 +1,171 @@
-.about {
+.about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-}
-
-.about-header {
-  margin-bottom: 4rem;
-}
-
-.about-header h1 {
-  font-size: 2.5rem;
-  color: #1a1a2e;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.about-intro {
+  padding: 5rem 2rem;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
   display: flex;
   align-items: center;
-  gap: 3rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
 }
 
 .about-image {
   flex: 1;
-  max-width: 350px;
+  max-width: 40%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  object-fit: cover;
 }
 
-.about-text {
-  flex: 2;
+.about-text-section {
+  flex: 1;
+  max-width: 60%;
 }
 
-.about-text p {
+.about-name {
+  font-size: 2.5rem;
+  font-weight: 400;
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+}
+
+.about-lastname {
+  font-weight: 300;
+  color: #333;
+}
+
+.about-specialties {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 3.5rem;
   color: #555;
+  font-weight: 300;
 }
 
-.about-section {
-  margin-bottom: 4rem;
-}
-
-.about-section h2 {
-  font-size: 2rem;
-  color: #1a1a2e;
-  text-align: center;
+.about-headline {
+  font-size: 1.5rem;
+  line-height: 1.5;
   margin-bottom: 2rem;
+  font-weight: 400;
+  color: #333;
 }
 
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #4cc9f0;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
-
-.timeline-item {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-  box-sizing: border-box;
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-}
-
-.timeline-dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: #4cc9f0;
-  border-radius: 50%;
-  top: 15px;
-  right: -8px;
-  z-index: 1;
-}
-
-.timeline-item:nth-child(even) .timeline-dot {
-  left: -8px;
-}
-
-.timeline-content {
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-  color: #1a1a2e;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content p {
-  margin-bottom: 0;
-  color: #555;
-}
-
-.skills-interests {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.skills-section, .interests-section {
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-.skills-section h2, .interests-section h2 {
-  font-size: 1.8rem;
-  color: #1a1a2e;
+.about-description {
+  font-size: 1rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
-}
-
-.skills-section ul, .interests-section ul {
-  padding-left: 1.5rem;
-}
-
-.skills-section li, .interests-section li {
-  margin-bottom: 0.8rem;
   color: #555;
+  font-weight: 300;
 }
 
-.philosophy-section {
-  text-align: center;
-  padding: 3rem;
-  background-color: #1a1a2e;
-  color: white;
-  border-radius: 8px;
-}
-
-.philosophy-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.philosophy-section blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+/* Responsive styles */
+@media (max-width: 992px) {
+  .about-container {
+    padding: 4rem 2rem;
+  }
+  
+  .about-content {
+    gap: 4rem;
+  }
+  
+  .about-headline {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .about-intro {
+  .about-container {
+    padding: 3rem 2rem;
+    align-items: flex-start;
+  }
+  
+  .about-content {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 3rem;
   }
   
   .about-image {
+    max-width: 80%;
     margin: 0 auto 2rem;
+  }
+  
+  .about-text-section {
+    max-width: 100%;
+  }
+  
+  .about-name {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  
+  .about-specialties {
+    text-align: center;
+  }
+  
+  .about-bio {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+  
+  .about-image {
+    max-width: 100%;
+  }
+  
+  .about-name {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-specialties {
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+  }
+  
+  .about-headline {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text-section {
+    padding-top: 0;
   }
   
   .timeline::before {

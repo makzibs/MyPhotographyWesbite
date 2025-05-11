@@ -18,7 +18,9 @@ const Home = () => {
       </div>
       
       {/* Grid of category thumbnails */}
-      <CategoryGrid />
+      <div id="categories">
+        <CategoryGrid />
+      </div>
       
       <div className="as-seen-in">
         <div className="as-seen-text">AS SEEN IN AS SEEN IN AS SEEN IN AS SEEN IN</div>
