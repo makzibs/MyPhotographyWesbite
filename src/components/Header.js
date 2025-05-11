@@ -6,17 +6,23 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Portfolio</h1>
+        <Link to="/">
+          <h1 className="logo-text">MAKZIBS<span className="in-text">in</span><span className="photo-text">photo</span></h1>
+        </Link>
       </div>
       <nav className="nav">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/photography">Photography</Link></li>
-          <li><Link to="/software">Software Projects</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="/presets">PRESETS</Link></li>
+          <li><Link to="/about">ABOUT</Link></li>
+          <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </nav>
+      <div className="social-icon">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
     </header>
   );
 };

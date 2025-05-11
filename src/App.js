@@ -7,6 +7,8 @@ import Photography from './components/Photography';
 import Software from './components/Software';
 import About from './components/About';
 import Contact from './components/Contact';
+import Collection from './components/Collection';
+import CategoryDetail from './components/CategoryDetail';
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path="/software" element={<Software />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/collection/:type" element={<Collection />} />
+            <Route path="/category/:categoryId" element={<CategoryDetail />} />
           </Routes>
         </main>
         <Footer />
