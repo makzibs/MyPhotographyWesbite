@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import MasonryGrid from './MasonryGrid';
 import './CategoryGrid.css';
 
 const CategoryGrid = () => {
@@ -9,7 +9,7 @@ const CategoryGrid = () => {
     'category2': 'Sunflower Portraits',
     'category3': 'Dark Ambience',
     'category4': 'Vibrant City',
-    'category5': 'Sunny Portraits',
+    'category5': 'Sun and Shade Portraits',
     'category6': 'Collections from now and then',
     'category7': 'Lake and Nature',
     'category8': 'Sunset',
@@ -34,24 +34,7 @@ const CategoryGrid = () => {
 
   return (
     <div className="category-grid-container">
-      <div className="category-grid">
-        {categories.map((category) => (
-          <div key={category.id} className="category-item">
-            <Link to={`/category/${category.id}`} className="category-link">
-              <div className="category-image-container">
-                <img 
-                  src={category.heroImage} 
-                  alt={category.name} 
-                  className="category-image"
-                />
-                <div className="category-overlay">
-                  <h3 className="category-name">{category.name}</h3>
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <MasonryGrid categories={categories} />
     </div>
   );
 };

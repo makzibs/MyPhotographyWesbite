@@ -51,36 +51,23 @@
   color: #666;
 }
 
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+/* Category detail page now uses the masonry layout from MasonryGrid.css */
+.category-detail .masonry-grid {
+  margin-top: 30px;
 }
 
-.image-item {
-  position: relative;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 10px;
+.category-detail .masonry-item {
   cursor: pointer;
-  transition: transform 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-item:hover {
-  transform: translateY(-5px);
-}
-
-.grid-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+.category-detail .masonry-image {
   transition: transform 0.5s ease;
 }
 
-.image-item:hover .grid-image {
+.category-detail .masonry-item:hover .masonry-image {
   transform: scale(1.05);
 }
 

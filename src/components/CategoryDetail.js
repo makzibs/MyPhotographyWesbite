@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './CategoryDetail.css';
+import CategoryDetailMasonry from './CategoryDetailMasonry';
 
 const CategoryDetail = () => {
   const { categoryId } = useParams();
@@ -15,7 +16,7 @@ const CategoryDetail = () => {
     'category2': 'Sunflower Portraits',
     'category3': 'Dark Ambience',
     'category4': 'Vibrant City',
-    'category5': 'Sunny Portraits',
+    'category5': 'Sun and Shade Portraits',
     'category6': 'Collections from now and then',
     'category7': 'Lake and Nature',
     'category8': 'Sunset',
@@ -373,17 +374,10 @@ const CategoryDetail = () => {
         <Link to="/categories" className="back-link">Back to Categories</Link>
       </div>
       
-      <div className="image-grid">
-        {images.map((image, index) => (
-          <div 
-            key={image.key} 
-            className="image-item" 
-            onClick={() => handleImageClick(index)}
-          >
-            <img src={image.src} alt={image.alt} className="grid-image" />
-          </div>
-        ))}
-      </div>
+      <CategoryDetailMasonry 
+        images={images} 
+        onImageClick={handleImageClick} 
+      />
       
       {selectedImage !== null && (
         <div className="fullscreen-view">
