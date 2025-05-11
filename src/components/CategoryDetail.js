@@ -11,15 +11,15 @@ const CategoryDetail = () => {
 
   // Map of category IDs to display names
   const categoryNames = {
-    'category1': 'Studio Portrait',
-    'category2': 'Sunflower Portrait',
-    'category3': 'One-day Dark Ambient',
+    'category1': 'Studio Portraits',
+    'category2': 'Sunflower Portraits',
+    'category3': 'Dark Ambience',
     'category4': 'Vibrant City',
     'category5': 'Sunny Portraits',
-    'category6': 'Collection from here and there',
+    'category6': 'Collections from now and then',
     'category7': 'Lake and Nature',
     'category8': 'Sunset',
-    'category9': 'Child Portrait',
+    'category9': 'Impromptu Portrait',
     'category10': 'Let kids have fun',
     'category11': 'Harsh Edits',
     'category12': 'Wedding Shots',

@@ -5,24 +5,24 @@ import './CategoryGrid.css';
 const CategoryGrid = () => {
   // Category names mapping
   const categoryNames = {
-    'category1': 'Portraits',
-    'category2': 'Fashion',
-    'category3': 'Editorial',
-    'category4': 'Product',
-    'category5': 'Beauty',
-    'category6': 'Lifestyle',
-    'category7': 'Travel',
-    'category8': 'Landscape',
-    'category9': 'Architecture',
-    'category10': 'Street',
-    'category11': 'Nature',
-    'category12': 'Events',
-    'category13': 'Wedding',
-    'category14': 'Sports',
-    'category15': 'Food',
-    'category16': 'Black & White',
-    'category17': 'Commercial',
-    'category18': 'Fine Art'
+    'category1': 'Studio Portraits',
+    'category2': 'Sunflower Portraits',
+    'category3': 'Dark Ambience',
+    'category4': 'Vibrant City',
+    'category5': 'Sunny Portraits',
+    'category6': 'Collections from now and then',
+    'category7': 'Lake and Nature',
+    'category8': 'Sunset',
+    'category9': 'Impromptu Portrait',
+    'category10': 'Let kids have fun',
+    'category11': 'Harsh Edits',
+    'category12': 'Wedding Shots',
+    'category13': 'Home Food',
+    'category14': 'Quick Family portrait',
+    'category15': 'Guys in Pasila street',
+    'category16': 'Sunset Portraits',
+    'category17': 'Meevan Weaning Ceremony',
+    'category18': "Robin's Birthday"
   };
   
   // Create categories array with proper hero images from each category folder
