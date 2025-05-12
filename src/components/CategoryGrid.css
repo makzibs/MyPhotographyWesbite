@@ -1,6 +1,8 @@
 .category-grid-container {
   width: 100%;
-  padding: 20px;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
 }
 
 .category-grid {

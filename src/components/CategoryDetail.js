@@ -139,7 +139,8 @@ const CategoryDetail = () => {
               categoryImages = [
                 { src: require('../assets/images/category7/heroImage.jpg'), alt: 'Lake and Nature Hero' },
                 { src: require('../assets/images/category7/7.1.jpg'), alt: 'Lake and Nature 1' },
-                { src: require('../assets/images/category7/7.2.jpg'), alt: 'Lake and Nature 2' }
+                { src: require('../assets/images/category7/7.2.jpg'), alt: 'Lake and Nature 2', },
+                { src: require('../assets/images/category7/7.3.jpg'), alt: 'Lake and Nature 3' }
               ];
             } catch (error) {
               console.error('Error loading category7 images:', error);

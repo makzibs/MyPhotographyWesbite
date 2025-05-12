@@ -1,8 +1,8 @@
 .category-detail {
   width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .category-header {
@@ -53,14 +53,20 @@
 
 /* Category detail page now uses the masonry layout from MasonryGrid.css */
 .category-detail .masonry-grid {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .category-detail .masonry-item {
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  background: none;
 }
 
 .category-detail .masonry-image {
