@@ -18,7 +18,6 @@ const CategoryGrid = () => {
     'category11': 'Harsh Edits',
     'category12': 'Wedding Shots',
     'category13': 'Home Food',
-    'category14': 'Quick Family portrait',
     'category15': 'Guys in Pasila street',
     'category16': 'Sunset Portraits',
     'category17': 'Meevan Weaning Ceremony',

@@ -304,7 +304,8 @@ const CategoryDetail = () => {
               categoryImages = [
                 { src: require('../assets/images/category18/heroImage.jpg'), alt: "Robin's Birthday Hero" },
                 { src: require('../assets/images/category18/18.1.jpg'), alt: "Robin's Birthday 1" },
-                { src: require('../assets/images/category18/18.2.jpg'), alt: "Robin's Birthday 2" }
+                { src: require('../assets/images/category18/18.2.jpg'), alt: "Robin's Birthday 2" },
+                { src: require('../assets/images/category18/18.3.jpg'), alt: "Robin's Birthday 3" },
               ];
             } catch (error) {
               console.error('Error loading category18 images:', error);

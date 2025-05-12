@@ -210,27 +210,22 @@
 
 /* As Seen In Section */
 .as-seen-in {
-  padding: 40px 20px;
   text-align: center;
-  border-top: 1px solid #f0f0f0;
+  padding: 30px 0;
+  background-color: white;
+  color: black;
+  margin: 0;
   border-bottom: 1px solid #f0f0f0;
-  margin: 40px 0;
 }
 
-.as-seen-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-}
+/* Removed as-seen-text as it's no longer used */
 
 .brand-logos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 10px;
   gap: 30px;
 }
 
@@ -247,9 +242,11 @@
 /* CTA Section */
 .cta-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 20px 40px;
   background-color: black;
   color: white;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-section .photo-grid {

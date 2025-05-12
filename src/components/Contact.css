@@ -10,14 +10,18 @@
 }
 
 .contact-header h1 {
-  font-size: 2.5rem;
-  color: #1a1a2e;
+  font-size: 1.8rem;
+  color: #000;
   margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 .contact-header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
+  font-weight: 400;
 }
 
 .contact-container {
@@ -28,9 +32,9 @@
 }
 
 .contact-info {
-  background-color: #f8f9fa;
+  background-color: #fff;
   padding: 2rem;
-  border-radius: 8px;
+  border: 1px solid #f0f0f0;
 }
 
 .info-item {
@@ -38,11 +42,14 @@
 }
 
 .info-item h3 {
-  font-size: 1.2rem;
-  color: #1a1a2e;
+  font-size: 1rem;
+  color: #000;
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #4cc9f0;
+  border-bottom: 1px solid #f0f0f0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .info-item p {
@@ -50,33 +57,48 @@
 }
 
 .social-links {
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .social-links a {
-  color: #4cc9f0;
+  margin-bottom: 0.8rem;
+  color: #555;
   text-decoration: none;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social-links i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.social-links a span {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 .social-links a:hover {
-  color: #3ab7dc;
+  color: #000;
 }
 
 .availability {
-  background-color: #1a1a2e;
-  color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
   margin-top: 2rem;
+  background-color: #000;
+  padding: 1.5rem;
+  color: white;
 }
 
 .availability h3 {
   color: white;
-  border-bottom: 2px solid #4cc9f0;
-  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.availability p {
+  color: white;
   margin-bottom: 0.5rem;
 }
 
@@ -94,42 +116,44 @@
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #1a1a2e;
-  font-weight: 600;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
+  border: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
   outline: none;
-  border-color: #4cc9f0;
+  border-color: #000;
+  background-color: #fff;
 }
 
 .submit-btn {
-  background-color: #4cc9f0;
+  background-color: #000;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 4px;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.5px;
   width: 100%;
 }
 
 .submit-btn:hover {
-  background-color: #3ab7dc;
-  transform: translateY(-2px);
+  background-color: #333;
 }
 
 .form-message {
@@ -153,22 +177,28 @@
 
 .contact-cta {
   text-align: center;
-  background-color: #f8f9fa;
-  padding: 3rem;
-  border-radius: 8px;
-  margin-top: 2rem;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  margin-top: 3rem;
+  border: 1px solid #f0f0f0;
 }
 
 .contact-cta h2 {
-  font-size: 2rem;
-  color: #1a1a2e;
+  font-size: 1.6rem;
+  color: #000;
   margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
 .contact-cta p {
+  font-size: 1.1rem;
   color: #555;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {

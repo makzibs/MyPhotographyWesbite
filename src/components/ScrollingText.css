@@ -1,0 +1,156 @@
+.photography-text-section {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 30px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.combined-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Stylized quote - large static text */
+.stylized-quote {
+  margin-bottom: 20px;
+  padding: 15px 0;
+  line-height: 1.2;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Consistent styling for all words in the quote */
+.word {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Dynamic keywords styling */
+.dynamic-keywords {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  margin-top: 10px;
+}
+
+.dynamic-keyword {
+  display: inline-block;
+  margin: 0 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.keyword-separator {
+  margin: 0 5px;
+  opacity: 0.3;
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+/* Unique styling for each keyword */
+.style1 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+
+.style2 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.style3 {
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.style4 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.style5 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Camera brand styles */
+.style6 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+}
+
+.style7 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.style8 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1.8px;
+}
+
+/* Different text styles */
+.quote {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.quote-italic {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.quote-thin {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.quote-bold {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .scrolling-text {
+    font-size: 1rem;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .hashtag-large {
+    font-size: 1.2rem;
+  }
+}

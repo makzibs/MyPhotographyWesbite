@@ -7,7 +7,14 @@
   padding: 0;
 }
 
+*, *::before, *::after {
+  box-shadow: none !important;
+  filter: none !important;
+  background-image: none !important;
+}
+
 body {
+  background: #fff !important;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
