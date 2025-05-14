@@ -9,6 +9,7 @@ const CategoryDetail = () => {
   const [categoryName, setCategoryName] = useState('');
   const [loading, setLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showHeader, setShowHeader] = useState(true);
 
   // Map of category IDs to display names
   const categoryNames = {
@@ -306,6 +307,7 @@ const CategoryDetail = () => {
                 { src: require('../assets/images/category18/18.1.jpg'), alt: "Robin's Birthday 1" },
                 { src: require('../assets/images/category18/18.2.jpg'), alt: "Robin's Birthday 2" },
                 { src: require('../assets/images/category18/18.3.jpg'), alt: "Robin's Birthday 3" },
+                { src: require('../assets/images/category18/18.4.jpg'), alt: "Robin's Birthday 4" }
               ];
             } catch (error) {
               console.error('Error loading category18 images:', error);
@@ -343,6 +345,7 @@ const CategoryDetail = () => {
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
+    setShowHeader(false); // Hide header when viewing an image
   };
 
   const handlePrevImage = () => {
@@ -363,6 +366,7 @@ const CategoryDetail = () => {
 
   const closeImageView = () => {
     setSelectedImage(null);
+    setShowHeader(true); // Show header again when closing image view
   };
 
   if (loading) {
@@ -371,10 +375,12 @@ const CategoryDetail = () => {
 
   return (
     <div className="category-detail">
-      <div className="category-header">
-        <h1>{categoryName}</h1>
-        <Link to="/categories" className="back-link">Back to Categories</Link>
-      </div>
+      {showHeader && (
+        <div className="category-header">
+          <h1>{categoryName}</h1>
+          <Link to="/categories" className="back-link">Back to Categories</Link>
+        </div>
+      )}
       
       <CategoryDetailMasonry 
         images={images} 

@@ -284,6 +284,11 @@
 }
 
 @media (max-width: 768px) {
+  /* Hide landing image on mobile */
+  .landing-image-container {
+    display: none;
+  }
+  
   .grid-row {
     flex-direction: column;
   }
