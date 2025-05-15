@@ -17,17 +17,17 @@ const CategoryDetail = () => {
     'category2': 'Sunflower Portraits',
     'category3': 'Dark Ambience',
     'category4': 'Vibrant City',
-    'category5': 'Sun and Shade Portraits',
+    'category5': 'Sun and Shade',
     'category6': 'Collections from now and then',
     'category7': 'Lake and Nature',
     'category8': 'Sunset',
     'category9': 'Impromptu Portrait',
     'category10': 'Let kids have fun',
-    'category11': 'Harsh Edits',
+    'category11': 'Creative Shots',
     'category12': 'Wedding Shots',
     'category13': 'Home Food',
     'category14': 'Quick Family portrait',
-    'category15': 'Guys in Pasila street',
+    'category15': 'Guys from Pasila street',
     'category16': 'Sunset Portraits',
     'category17': 'Meevan Weaning Ceremony',
     'category18': "Robin's Birthday"
@@ -71,7 +71,8 @@ const CategoryDetail = () => {
             categoryImages = [
               { src: require('../assets/images/category3/heroImage.jpg'), alt: 'Dark Ambience Hero' },
               { src: require('../assets/images/category3/3.1.jpg'), alt: 'Dark Ambience 1' },
-              { src: require('../assets/images/category3/3.2.jpg'), alt: 'Dark Ambience 2' }
+              { src: require('../assets/images/category3/3.2.jpg'), alt: 'Dark Ambience 2' },
+              { src: require('../assets/images/category3/3.3.jpg'), alt: 'Dark Ambience 3' }
             ];
             break;
           case 'category4':
@@ -85,8 +86,10 @@ const CategoryDetail = () => {
                 { src: require('../assets/images/category4/4.5.jpg'), alt: 'Vibrant City 5' },
                 { src: require('../assets/images/category4/4.6.jpg'), alt: 'Vibrant City 6' },
                 { src: require('../assets/images/category4/4.7.jpg'), alt: 'Vibrant City 7' },
-                { src: require('../assets/images/category4/4.8.jpg'), alt: 'Vibrant City 8' }
+                { src: require('../assets/images/category4/4.8.jpg'), alt: 'Vibrant City 8' },
+                { src: require('../assets/images/category4/4.9.jpg'), alt: 'Vibrant City 9' }
               ];
+               
             } catch (error) {
               console.error('Error loading category4 images:', error);
               categoryImages = [
@@ -125,7 +128,8 @@ const CategoryDetail = () => {
                 { src: require('../assets/images/category6/6.6.jpg'), alt: 'Collection 6' },
                 { src: require('../assets/images/category6/6.7.jpg'), alt: 'Collection 7' },
                 { src: require('../assets/images/category6/6.8.jpg'), alt: 'Collection 8' },
-                { src: require('../assets/images/category6/6.9.jpg'), alt: 'Collection 9' }
+                { src: require('../assets/images/category6/6.9.jpg'), alt: 'Collection 9' },
+                { src: require('../assets/images/category6/6.10.jpg'), alt: 'Collection 10' }
               ];
             } catch (error) {
               console.error('Error loading category6 images:', error);
@@ -155,7 +159,8 @@ const CategoryDetail = () => {
             try {
               categoryImages = [
                 { src: require('../assets/images/category8/heroImage.jpg'), alt: 'Sunset Hero' },
-                { src: require('../assets/images/category8/8.1.jpg'), alt: 'Sunset 1' }
+                { src: require('../assets/images/category8/8.1.jpg'), alt: 'Sunset 1' },
+                { src: require('../assets/images/category8/8.2.jpg'), alt: 'Sunset 2' }
               ];
             } catch (error) {
               console.error('Error loading category8 images:', error);
@@ -193,10 +198,10 @@ const CategoryDetail = () => {
           case 'category11':
             try {
               categoryImages = [
-                { src: require('../assets/images/category11/heroImage.jpg'), alt: 'Harsh Edits Hero' },
-                { src: require('../assets/images/category11/11.1.jpg'), alt: 'Harsh Edit 1' },
-                { src: require('../assets/images/category11/11.2.jpg'), alt: 'Harsh Edit 2' },
-                { src: require('../assets/images/category11/11.3.jpg'), alt: 'Harsh Edit 3' }
+                { src: require('../assets/images/category11/heroImage.jpg'), alt: 'Creative Shots Hero' },
+                { src: require('../assets/images/category11/11.1.jpg'), alt: 'Creative Shot 1' },
+                { src: require('../assets/images/category11/11.2.jpg'), alt: 'Creative Shot 2' }
+                
               ];
             } catch (error) {
               console.error('Error loading category11 images:', error);

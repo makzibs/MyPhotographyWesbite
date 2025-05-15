@@ -6,7 +6,7 @@
   position: relative;
 }
 
-/* Landing Image */
+/* Landing Image Slider */
 .landing-image-container {
   width: 100%;
   overflow: hidden;
@@ -21,13 +21,71 @@
   height: 100%;
   object-fit: cover;
   background-color: white;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
-.landing-image:hover {
-  transform: scale(1.02);
-  filter: brightness(1.1);
+/* Navigation buttons */
+.landing-image-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.landing-image-container:hover .landing-image-controls {
+  opacity: 1;
+}
+
+.landing-nav-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.landing-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.landing-image-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.landing-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.landing-indicator.active {
+  background-color: white;
+  transform: scale(1.2);
 }
 
 
