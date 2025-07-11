@@ -346,7 +346,7 @@ const CategoryDetail = () => {
     };
 
     loadCategoryImages();
-  }, [categoryId]);
+  }, [categoryId, categoryNames]);
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
