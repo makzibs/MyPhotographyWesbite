@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './CategoryDetail.css';
 import CategoryDetailMasonry from './CategoryDetailMasonry';
@@ -12,7 +12,7 @@ const CategoryDetail = () => {
   const [showHeader, setShowHeader] = useState(true);
 
   // Map of category IDs to display names
-  const categoryNames = {
+  const categoryNames = useMemo(() => ({
     'category1': 'Studio Portraits',
     'category2': 'Sunflower Portraits',
     'category3': 'Dark Ambience',
@@ -31,7 +31,7 @@ const CategoryDetail = () => {
     'category16': 'Sunset Portraits',
     'category17': 'Meevan Weaning Ceremony',
     'category18': "Robin's Birthday"
-  };
+  }), []);
 
   useEffect(() => {
     // Function to load images for the selected category
@@ -346,7 +346,7 @@ const CategoryDetail = () => {
     };
 
     loadCategoryImages();
-  }, [categoryId, categoryNames]);
+  }, [categoryId]);
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
