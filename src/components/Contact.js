@@ -58,12 +58,6 @@ const Contact = () => {
           </div>
           
           <div className="info-item">
-            <h3>Based In</h3>
-            <p>Tampere, Finland</p>
-            <p className="subtle-text">Available for travel worldwide</p>
-          </div>
-          
-          <div className="info-item">
             <h3>Connect</h3>
             <div className="social-links">
               <a href="https://instagram.com/makzibs_in_photo_and_video" target="_blank" rel="noopener noreferrer">
