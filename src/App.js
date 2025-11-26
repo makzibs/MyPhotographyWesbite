@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Photography from './components/Photography';
 import Software from './components/Software';
 import About from './components/About';
+import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Collection from './components/Collection';
 import CategoryDetail from './components/CategoryDetail';
@@ -28,10 +29,12 @@ const Layout = () => {
           <Route path="/photography" element={<Photography />} />
           <Route path="/software" element={<Software />} />
           <Route path="/about" element={<About />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/collection/:type" element={<Collection />} />
           <Route path="/category/:categoryId" element={<CategoryDetail />} />
           <Route path="/categories" element={<CategoriesGrid />} />
+
         </Routes>
       </main>
       <Footer />
