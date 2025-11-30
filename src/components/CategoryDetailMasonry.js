@@ -1,4 +1,4 @@
-import React from 'react';
+import CLDBlurImage from './Image';
 import './MasonryGrid.css';
 
 const CategoryDetailMasonry = ({ images, onImageClick }) => {
@@ -10,8 +10,14 @@ const CategoryDetailMasonry = ({ images, onImageClick }) => {
           className="masonry-item"
           onClick={() => onImageClick(index)}
         >
-          <img 
+          {/* <img 
             src={image.src} 
+            alt={image.alt} 
+            className="masonry-image"
+          /> */}
+
+          <CLDBlurImage 
+            publicId={image.src} 
             alt={image.alt} 
             className="masonry-image"
           />

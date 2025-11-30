@@ -1,6 +1,5 @@
-import React from 'react';
-import MasonryGrid from './MasonryGrid';
 import './CategoryGrid.css';
+import MasonryGrid from './MasonryGrid';
 
 const CategoryGrid = () => {
   // Category names mapping
@@ -28,7 +27,7 @@ const CategoryGrid = () => {
   const categories = Object.keys(categoryNames).map(categoryId => ({
     id: categoryId,
     name: categoryNames[categoryId],
-    heroImage: require(`../assets/images/${categoryId}/heroImage.jpg`)
+    heroImage:''
   }));
 
   return (

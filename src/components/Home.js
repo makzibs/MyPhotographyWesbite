@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CategoryGrid from './CategoryGrid';
-import ScrollingText from './ScrollingText';
 import './Home.css';
+import ScrollingText from './ScrollingText';
 
 const Home = () => {
   // Array of 5 landscape-oriented landing images from MovingImages folder
   const landingImages = [
-    require('../assets/images/MovingImages/53922580726_ec284411c9_o.jpg'),
-    require('../assets/images/MovingImages/53820035969_40ab104e1c_o.jpg'),
-    require('../assets/images/MovingImages/53922931484_6fcac6d10c_o.jpg'),
+    require(''),
+    require(''),
+    require(''),
     
   ];
 
@@ -32,7 +32,9 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="landing-image-container">
+
+
+      {/* <div className="landing-image-container">
         <img 
           src={landingImages[currentImageIndex]} 
           alt={`Editorial Photography ${currentImageIndex + 1}`} 
@@ -57,7 +59,7 @@ const Home = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       
       {/* Grid of category thumbnails */}
       <div id="categories">
