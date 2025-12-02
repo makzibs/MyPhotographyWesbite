@@ -50,15 +50,7 @@ const CategoryDetail = () => {
         // Based on the category ID, create the appropriate image array
         switch(categoryId) {
           case 'category1':
-            // categoryImages = [
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215713/heroImage_lqf6w3.jpg', alt: 'Studio Portraits Hero' },
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215710/1.1_jp7lzd.jpg', alt: 'Studio Portrait 1' },
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215710/1.2_yjm1dg.jpg', alt: 'Studio Portrait 2' },
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215712/1.3_jaxpqz.jpg', alt: 'Studio Portrait 3' },
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215711/1.4_duc0a9.jpg', alt: 'Studio Portrait 4' },
-            //   { src: 'https://res.cloudinary.com/dtbxzwwfj/image/upload/v1764215713/1.5_umcibb.jpg', alt: 'Studio Portrait 5' }
-            // ];
-            categoryImages = [
+           categoryImages = [
               { src: 'heroImage_lqf6w3', alt: 'Studio Portraits Hero' },
               { src: '1.1_jp7lzd', alt: 'Studio Portrait 1' },
               { src: '1.2_yjm1dg', alt: 'Studio Portrait 2' },
