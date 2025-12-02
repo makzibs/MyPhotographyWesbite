@@ -69,272 +69,272 @@ const CategoryDetail = () => {
             break;
           case 'category2':
             categoryImages = [
-              { src: require(''), alt: 'Sunflower Portraits Hero' },
-              { src: require(''), alt: 'Sunflower Portrait 1' },
-              { src: require(''), alt: 'Sunflower Portrait 2' },
-              { src: require(''), alt: 'Sunflower Portrait 3' }
+              { src: '', alt: 'Sunflower Portraits Hero' },
+              { src: '', alt: 'Sunflower Portrait 1' },
+              { src: '', alt: 'Sunflower Portrait 2' },
+              { src: '', alt: 'Sunflower Portrait 3' }
             ];
             break;
           case 'category3':
             categoryImages = [
-              { src: require(''), alt: 'Dark Ambience Hero' },
-              { src: require(''), alt: 'Dark Ambience 1' },
-              { src: require(''), alt: 'Dark Ambience 2' },
-              { src: require(''), alt: 'Dark Ambience 3' }
+              { src: '', alt: 'Dark Ambience Hero' },
+              { src: '', alt: 'Dark Ambience 1' },
+              { src: '', alt: 'Dark Ambience 2' },
+              { src: '', alt: 'Dark Ambience 3' }
             ];
             break;
           case 'category4':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Vibrant City Hero' },
-                { src: require(''), alt: 'Vibrant City 1' },
-                { src: require(''), alt: 'Vibrant City 2' },
-                { src: require(''), alt: 'Vibrant City 3' },
-                { src: require(''), alt: 'Vibrant City 4' },
-                { src: require(''), alt: 'Vibrant City 5' },
-                { src: require(''), alt: 'Vibrant City 6' },
-                { src: require(''), alt: 'Vibrant City 7' },
-                { src: require(''), alt: 'Vibrant City 8' },
-                { src: require(''), alt: 'Vibrant City 9' }
+                { src: '', alt: 'Vibrant City 1' },
+                { src: '', alt: 'Vibrant City Hero' },
+                { src: '', alt: 'Vibrant City 2' },
+                { src: '', alt: 'Vibrant City 3' },
+                { src: '', alt: 'Vibrant City 4' },
+                { src: '', alt: 'Vibrant City 5' },
+                { src: '', alt: 'Vibrant City 6' },
+                { src: '', alt: 'Vibrant City 7' },
+                { src: '', alt: 'Vibrant City 8' },
+                { src: '', alt: 'Vibrant City 9' }
               ];
                
             } catch (error) {
               console.error('Error loading category4 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category5':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Sunny Portraits Hero' },
-                { src: require(''), alt: 'Sunny Portrait 1' },
-                { src: require(''), alt: 'Sunny Portrait 2' },
-                { src: require(''), alt: 'Sunny Portrait 3' },
-                { src: require(''), alt: 'Sunny Portrait 4' },
-                { src: require(''), alt: 'Sunny Portrait 5' }
+                { src: '', alt: 'Sunny Portraits Hero' },
+                { src: '', alt: 'Sunny Portrait 1' },
+                { src: '', alt: 'Sunny Portrait 2' },
+                { src: '', alt: 'Sunny Portrait 3' },
+                { src: '', alt: 'Sunny Portrait 4' },
+                { src: '', alt: 'Sunny Portrait 5' }
               ];
             } catch (error) {
               console.error('Error loading category5 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category6':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Collections from now and then Hero' },
-                { src: require(''), alt: 'Collection 1' },
-                { src: require(''), alt: 'Collection 2' },
-                { src: require(''), alt: 'Collection 3' },
-                { src: require(''), alt: 'Collection 4' },
-                { src: require(''), alt: 'Collection 5' },
-                { src: require(''), alt: 'Collection 6' },
-                { src: require(''), alt: 'Collection 7' },
-                { src: require(''), alt: 'Collection 8' },
-                { src: require(''), alt: 'Collection 9' },
-                { src: require(''), alt: 'Collection 10' }
+                { src: '', alt: 'Collections from now and then Hero' },
+                { src: '', alt: 'Collection 1' },
+                { src: '', alt: 'Collection 2' },
+                { src: '', alt: 'Collection 3' },
+                { src: '', alt: 'Collection 4' },
+                { src: '', alt: 'Collection 5' },
+                { src: '', alt: 'Collection 6' },
+                { src: '', alt: 'Collection 7' },
+                { src: '', alt: 'Collection 8' },
+                { src: '', alt: 'Collection 9' },
+                { src: '', alt: 'Collection 10' }
               ];
             } catch (error) {
               console.error('Error loading category6 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category7':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Lake and Nature Hero' },
-                { src: require(''), alt: 'Lake and Nature 1' },
-                { src: require(''), alt: 'Lake and Nature 2', },
-                { src: require(''), alt: 'Lake and Nature 3' }
+                { src: '', alt: 'Lake and Nature Hero' },
+                { src: '', alt: 'Lake and Nature 1' },
+                { src: '', alt: 'Lake and Nature 2', },
+                { src: '', alt: 'Lake and Nature 3' }
               ];
             } catch (error) {
               console.error('Error loading category7 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category8':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Sunset Hero' },
-                { src: require(''), alt: 'Sunset 1' },
-                { src: require(''), alt: 'Sunset 2' }
+                { src: '', alt: 'Sunset Hero' },
+                { src: '', alt: 'Sunset 1' },
+                { src: '', alt: 'Sunset 2' }
               ];
             } catch (error) {
               console.error('Error loading category8 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' }
+                { src: '', alt: 'Fallback 1' }
               ];
             }
             break;
           case 'category9':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Impromptu Portrait Hero' },
-                { src: require(''), alt: 'Impromptu Portrait 1' }
+                { src: '', alt: 'Impromptu Portrait Hero' },
+                { src: '', alt: 'Impromptu Portrait 1' }
               ];
             } catch (error) {
               console.error('Error loading category9 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' }
+                { src: '', alt: 'Fallback 1' }
               ];
             }
             break;
           case 'category10':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Let kids have fun Hero' },
-                { src: require(''), alt: 'Kids having fun 1' }
+                { src: '', alt: 'Let kids have fun Hero' },
+                { src: '', alt: 'Kids having fun 1' }
               ];
             } catch (error) {
               console.error('Error loading category10 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' }
+                { src: '', alt: 'Fallback 1' }
               ];
             }
             break;
           case 'category11':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Creative Shots Hero' },
-                { src: require(''), alt: 'Creative Shot 1' },
-                { src: require(''), alt: 'Creative Shot 2' }
+                { src: '', alt: 'Creative Shots Hero' },
+                { src: '', alt: 'Creative Shot 1' },
+                { src: '', alt: 'Creative Shot 2' }
                 
               ];
             } catch (error) {
               console.error('Error loading category11 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category12':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Wedding Shots Hero' },
-                { src: require(''), alt: 'Wedding Shots 1' },
+                { src: '', alt: 'Wedding Shots Hero' },
+                { src: '', alt: 'Wedding Shots 1' },
                 { src: require(''), alt: 'Wedding Shots 2' },
-                { src: require(''), alt: 'Wedding Shots 3' },
-                { src: require(''), alt: 'Wedding Shots 4' }
+                { src: '', alt: 'Wedding Shots 3' },
+                { src: '', alt: 'Wedding Shots 4' }
               ];
             } catch (error) {
               console.error('Error loading category12 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src : '', alt: 'Fallback 1' },
+                { src:''  , alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category13':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Home Food Hero' },
-                { src: require(''), alt: 'Home Food 1' },
-                { src: require(''), alt: 'Home Food 2' }
+                { src: '', alt: 'Home Food Hero' },
+                { src: '', alt: 'Home Food 1' },
+                { src: '', alt: 'Home Food 2' }
               ];
             } catch (error) {
               console.error('Error loading category13 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category14':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Quick Family portrait Hero' },
-                { src: require(''), alt: 'Quick Family portrait 1' }
+                { src: '', alt: 'Quick Family portrait Hero' },
+                { src: '', alt: 'Quick Family portrait 1' }
               ];
             } catch (error) {
               console.error('Error loading category14 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' }
+                { src: '', alt: 'Fallback 1' }
               ];
             }
             break;
           case 'category15':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Guys in Pasila street Hero' },
-                { src: require(''), alt: 'Guys in Pasila street 1' },
-                { src: require(''), alt: 'Guys in Pasila street 2' }
+                { src: '', alt: 'Guys in Pasila street Hero' },
+                { src: '', alt: 'Guys in Pasila street 1' },
+                { src: '', alt: 'Guys in Pasila street 2' }
               ];
             } catch (error) {
               console.error('Error loading category15 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category16':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Sunset Portraits Hero' },
-                { src: require(''), alt: 'Sunset Portrait 1' },
-                { src: require(''), alt: 'Sunset Portrait 2' },
-                { src: require(''), alt: 'Sunset Portrait 3' },
-                { src: require(''), alt: 'Sunset Portrait 4' }
+                { src: '', alt: 'Sunset Portraits Hero' },
+                { src: '', alt: 'Sunset Portrait 1' },
+                { src: '', alt: 'Sunset Portrait 2' },
+                { src: '', alt: 'Sunset Portrait 3' },
+                { src: '', alt: 'Sunset Portrait 4' }
               ];
             } catch (error) {
               console.error('Error loading category16 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category17':
             try {
               categoryImages = [
-                { src: require(''), alt: 'Meevan Weaning Ceremony Hero' },
-                { src: require(''), alt: 'Meevan Weaning Ceremony 1' },
-                { src: require(''), alt: 'Meevan Weaning Ceremony 2' },
-                { src: require(''), alt: 'Meevan Weaning Ceremony 3' },
-                { src: require(''), alt: 'Meevan Weaning Ceremony 4' }
+                { src: '', alt: 'Meevan Weaning Ceremony Hero' },
+                { src: '', alt: 'Meevan Weaning Ceremony 1' },
+                { src: '', alt: 'Meevan Weaning Ceremony 2' },
+                { src: '', alt: 'Meevan Weaning Ceremony 3' },
+                { src: '', alt: 'Meevan Weaning Ceremony 4' }
               ];
             } catch (error) {
               console.error('Error loading category17 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           case 'category18':
             try {
               categoryImages = [
-                { src: require(''), alt: "Robin's Birthday Hero" },
-                { src: require(''), alt: "Robin's Birthday 1" },
-                { src: require(''), alt: "Robin's Birthday 2" },
-                { src: require(''), alt: "Robin's Birthday 3" },
-                { src: require(''), alt: "Robin's Birthday 4" }
+                { src: '', alt: "Robin's Birthday Hero" },
+                { src: '', alt: "Robin's Birthday 1" },
+                { src: '', alt: "Robin's Birthday 2" },
+                { src: '', alt: "Robin's Birthday 3" },
+                { src: '', alt: "Robin's Birthday 4" }
               ];
             } catch (error) {
               console.error('Error loading category18 images:', error);
               categoryImages = [
-                { src: require(''), alt: 'Fallback 1' },
-                { src: require(''), alt: 'Fallback 2' }
+                { src: '', alt: 'Fallback 1' },
+                { src: '', alt: 'Fallback 2' }
               ];
             }
             break;
           default:
             // Fallback to category1 images if the category is not found
             categoryImages = [
-              { src: require('../assets/images/category1/1.1.jpg'), alt: 'Fallback 1' },
-              { src: require('../assets/images/category1/1.2.jpg'), alt: 'Fallback 2' }
+              { src: '', alt: 'Fallback 1' },
+              { src: '', alt: 'Fallback 2' }
             ];
         }
         

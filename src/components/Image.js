@@ -1,6 +1,3 @@
-
-
-
 import { AdvancedImage, lazyload, placeholder, responsive } from "@cloudinary/react";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 

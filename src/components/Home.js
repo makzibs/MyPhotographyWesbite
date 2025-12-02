@@ -7,9 +7,9 @@ import ScrollingText from './ScrollingText';
 const Home = () => {
   // Array of 5 landscape-oriented landing images from MovingImages folder
   const landingImages = [
-    require(''),
-    require(''),
-    require(''),
+    '',
+    '',
+    '',
     
   ];
 
