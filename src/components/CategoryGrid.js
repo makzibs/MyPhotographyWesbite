@@ -25,23 +25,23 @@ const CategoryGrid = () => {
   
   // Cloudinary hero image IDs for each category
   const heroImages = {
-    'category1': 'heroImage_ff71wp',
-    'category2': 'heroImage_nn8ese',
-    'category3': 'heroImage_a4oqtm',
-    'category4': 'heroImage_wdvsq6',
-    'category5': 'heroImage_uqzpeu',
-    'category6': 'heroImage_ncz8lv',
-    'category7': 'heroImage_emhaom',
-    'category8': 'heroImage_s2pkna',
-    'category9': 'heroImage_wl9nzk',
-    'category10': 'heroImage_yq7p8o',
-    'category11': 'heroImage_gqibxa',
-    'category12': 'heroImage_lktku1',
-    'category13': 'heroImage_vyixzg',
-    'category15': 'heroImage_jowgqh',
-    'category16': 'heroImage_ff71wp',
-    'category17': 'heroImage_nn8ese',
-    'category18': 'heroImage_u8jvq7'
+    'category1': 'heroImage1',
+    'category2': 'heroImage2',
+    'category3': 'heroImage3',
+    'category4': 'heroImage4',
+    'category5': 'heroImage5',
+    'category6': 'heroImage6',
+    'category7': 'heroImage7',
+    'category8': 'heroImage8',
+    'category9': 'heroImage9',
+    'category10': 'heroImage10',
+    'category11': 'heroImage11',
+    'category12': 'heroImage12',
+    'category13': 'heroImage13',
+    'category15': 'heroImage15',
+    'category16': 'heroImage16',
+    'category17': 'heroImage17',
+    'category18': 'heroImage18'
   };
   
   // Create categories array with Cloudinary hero images
