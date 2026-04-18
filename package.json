@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@cloudinary/react": "^1.14.3",
+    "@cloudinary/react": "^1.14.4",
     "@cloudinary/url-gen": "^1.22.0",
     "@fontsource/cinzel": "^5.2.5",
     "@fontsource/cormorant-garamond": "^5.2.7",

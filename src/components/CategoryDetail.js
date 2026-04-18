@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import CLDBlurImage from './Image';
 import './CategoryDetail.css';
 import CategoryDetailMasonry from './CategoryDetailMasonry';
 
@@ -33,8 +34,83 @@ const CategoryDetail = () => {
     'category18': "Robin's Birthday"
   }), []);
 
+  // Cloudinary public IDs for all categories
+  const cloudinaryIds = useMemo(() => ({
+    category1: {
+      heroImage: 'heroImage_ff71wp',
+      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '1.5_jzrta9']
+    },
+    category2: {
+      heroImage: 'heroImage_nn8ese',
+      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is']
+    },
+    category3: {
+      heroImage: 'heroImage_a4oqtm',
+      images: ['3.1_leliwh', '3.2_wmsbqt', '3.3_n3xrgy']
+    },
+    category4: {
+      heroImage: 'heroImage_wdvsq6',
+      images: ['4.4_subfc0', '4.5_vfpwyh', '4.7_piklfe', '4.8_xaovzy', '4.9_qicgcx']
+    },
+    category5: {
+      heroImage: 'heroImage_uqzpeu',
+      images: ['5.1_nhxw7a', '5.2_xj9hqm', '5.3_md2ztf', '5.4_m0iynv', '5.5_cs8g4q']
+    },
+    category6: {
+      heroImage: 'heroImage_ncz8lv',
+      images: ['6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+    },
+    category7: {
+      heroImage: 'heroImage_emhaom',
+      images: ['7.2_pg892a', '7.3_nyzdyq']
+    },
+    category8: {
+      heroImage: 'heroImage_s2pkna',
+      images: ['8.1_hl4gkh', '8.2_prvvoj']
+    },
+    category9: {
+      heroImage: 'heroImage_wl9nzk',
+      images: ['9.1_rtv12t']
+    },
+    category10: {
+      heroImage: 'heroImage_yq7p8o',
+      images: ['10.1_vmjxcq']
+    },
+    category11: {
+      heroImage: 'heroImage_gqibxa',
+      images: ['11.1_zsknhs', '11.2_vrnpx0', '11.4_ufmjo7']
+    },
+    category12: {
+      heroImage: 'heroImage_lktku1',
+      images: ['12.1_f0jgxj', '12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux']
+    },
+    category13: {
+      heroImage: 'heroImage_vyixzg',
+      images: ['13.1_xdxai0', '13.2_fatdmj']
+    },
+    category14: {
+      heroImage: 'heroImage_qld33m',
+      images: ['14.1_dedgec']
+    },
+    category15: {
+      heroImage: 'heroImage_jowgqh',
+      images: ['15.1_upsjpd', '15.2_tth0w9']
+    },
+    category16: {
+      heroImage: 'heroImage_ff71wp',
+      images: []
+    },
+    category17: {
+      heroImage: 'heroImage_nn8ese',
+      images: ['17.1_dwghbw', '17.2_f95eqa', '17.3_dkzivr', '17.4_qmg0nb']
+    },
+    category18: {
+      heroImage: 'heroImage_u8jvq7',
+      images: ['18.1_ihjvhf', '18.2_ds5fqo', '18.3_eukgkl', '18.4_mjtylu']
+    }
+  }), []);
+
   useEffect(() => {
-    // Function to load images for the selected category
     const loadCategoryImages = () => {
       try {
         setLoading(true);
@@ -43,300 +119,32 @@ const CategoryDetail = () => {
         const displayName = categoryNames[categoryId] || categoryId.replace(/^category/, 'Category ');
         setCategoryName(displayName);
         
-        // Import images directly without using safeImport
-        // Hard-coded image paths for each category
-        let categoryImages = [];
+        // Get Cloudinary IDs for this category
+        const categoryData = cloudinaryIds[categoryId];
         
-        // Based on the category ID, create the appropriate image array
-        switch(categoryId) {
-          case 'category1':
-           categoryImages = [
-              { src: 'heroImage_lqf6w3', alt: 'Studio Portraits Hero' },
-              { src: '1.1_jp7lzd', alt: 'Studio Portrait 1' },
-              { src: '1.2_yjm1dg', alt: 'Studio Portrait 2' },
-              { src: '1.3_jaxpqz', alt: 'Studio Portrait 3' },
-              { src: '1.4_duc0a9', alt: 'Studio Portrait 4' },
-              { src: '1.5_umcibb', alt: 'Studio Portrait 5' }
-            ];
-            break;
-          case 'category2':
-            categoryImages = [
-              { src: '', alt: 'Sunflower Portraits Hero' },
-              { src: '', alt: 'Sunflower Portrait 1' },
-              { src: '', alt: 'Sunflower Portrait 2' },
-              { src: '', alt: 'Sunflower Portrait 3' }
-            ];
-            break;
-          case 'category3':
-            categoryImages = [
-              { src: '', alt: 'Dark Ambience Hero' },
-              { src: '', alt: 'Dark Ambience 1' },
-              { src: '', alt: 'Dark Ambience 2' },
-              { src: '', alt: 'Dark Ambience 3' }
-            ];
-            break;
-          case 'category4':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Vibrant City 1' },
-                { src: '', alt: 'Vibrant City Hero' },
-                { src: '', alt: 'Vibrant City 2' },
-                { src: '', alt: 'Vibrant City 3' },
-                { src: '', alt: 'Vibrant City 4' },
-                { src: '', alt: 'Vibrant City 5' },
-                { src: '', alt: 'Vibrant City 6' },
-                { src: '', alt: 'Vibrant City 7' },
-                { src: '', alt: 'Vibrant City 8' },
-                { src: '', alt: 'Vibrant City 9' }
-              ];
-               
-            } catch (error) {
-              console.error('Error loading category4 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category5':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Sunny Portraits Hero' },
-                { src: '', alt: 'Sunny Portrait 1' },
-                { src: '', alt: 'Sunny Portrait 2' },
-                { src: '', alt: 'Sunny Portrait 3' },
-                { src: '', alt: 'Sunny Portrait 4' },
-                { src: '', alt: 'Sunny Portrait 5' }
-              ];
-            } catch (error) {
-              console.error('Error loading category5 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category6':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Collections from now and then Hero' },
-                { src: '', alt: 'Collection 1' },
-                { src: '', alt: 'Collection 2' },
-                { src: '', alt: 'Collection 3' },
-                { src: '', alt: 'Collection 4' },
-                { src: '', alt: 'Collection 5' },
-                { src: '', alt: 'Collection 6' },
-                { src: '', alt: 'Collection 7' },
-                { src: '', alt: 'Collection 8' },
-                { src: '', alt: 'Collection 9' },
-                { src: '', alt: 'Collection 10' }
-              ];
-            } catch (error) {
-              console.error('Error loading category6 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category7':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Lake and Nature Hero' },
-                { src: '', alt: 'Lake and Nature 1' },
-                { src: '', alt: 'Lake and Nature 2', },
-                { src: '', alt: 'Lake and Nature 3' }
-              ];
-            } catch (error) {
-              console.error('Error loading category7 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category8':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Sunset Hero' },
-                { src: '', alt: 'Sunset 1' },
-                { src: '', alt: 'Sunset 2' }
-              ];
-            } catch (error) {
-              console.error('Error loading category8 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' }
-              ];
-            }
-            break;
-          case 'category9':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Impromptu Portrait Hero' },
-                { src: '', alt: 'Impromptu Portrait 1' }
-              ];
-            } catch (error) {
-              console.error('Error loading category9 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' }
-              ];
-            }
-            break;
-          case 'category10':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Let kids have fun Hero' },
-                { src: '', alt: 'Kids having fun 1' }
-              ];
-            } catch (error) {
-              console.error('Error loading category10 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' }
-              ];
-            }
-            break;
-          case 'category11':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Creative Shots Hero' },
-                { src: '', alt: 'Creative Shot 1' },
-                { src: '', alt: 'Creative Shot 2' }
-                
-              ];
-            } catch (error) {
-              console.error('Error loading category11 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category12':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Wedding Shots Hero' },
-                { src: '', alt: 'Wedding Shots 1' },
-                { src: require(''), alt: 'Wedding Shots 2' },
-                { src: '', alt: 'Wedding Shots 3' },
-                { src: '', alt: 'Wedding Shots 4' }
-              ];
-            } catch (error) {
-              console.error('Error loading category12 images:', error);
-              categoryImages = [
-                { src : '', alt: 'Fallback 1' },
-                { src:''  , alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category13':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Home Food Hero' },
-                { src: '', alt: 'Home Food 1' },
-                { src: '', alt: 'Home Food 2' }
-              ];
-            } catch (error) {
-              console.error('Error loading category13 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category14':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Quick Family portrait Hero' },
-                { src: '', alt: 'Quick Family portrait 1' }
-              ];
-            } catch (error) {
-              console.error('Error loading category14 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' }
-              ];
-            }
-            break;
-          case 'category15':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Guys in Pasila street Hero' },
-                { src: '', alt: 'Guys in Pasila street 1' },
-                { src: '', alt: 'Guys in Pasila street 2' }
-              ];
-            } catch (error) {
-              console.error('Error loading category15 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category16':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Sunset Portraits Hero' },
-                { src: '', alt: 'Sunset Portrait 1' },
-                { src: '', alt: 'Sunset Portrait 2' },
-                { src: '', alt: 'Sunset Portrait 3' },
-                { src: '', alt: 'Sunset Portrait 4' }
-              ];
-            } catch (error) {
-              console.error('Error loading category16 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category17':
-            try {
-              categoryImages = [
-                { src: '', alt: 'Meevan Weaning Ceremony Hero' },
-                { src: '', alt: 'Meevan Weaning Ceremony 1' },
-                { src: '', alt: 'Meevan Weaning Ceremony 2' },
-                { src: '', alt: 'Meevan Weaning Ceremony 3' },
-                { src: '', alt: 'Meevan Weaning Ceremony 4' }
-              ];
-            } catch (error) {
-              console.error('Error loading category17 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          case 'category18':
-            try {
-              categoryImages = [
-                { src: '', alt: "Robin's Birthday Hero" },
-                { src: '', alt: "Robin's Birthday 1" },
-                { src: '', alt: "Robin's Birthday 2" },
-                { src: '', alt: "Robin's Birthday 3" },
-                { src: '', alt: "Robin's Birthday 4" }
-              ];
-            } catch (error) {
-              console.error('Error loading category18 images:', error);
-              categoryImages = [
-                { src: '', alt: 'Fallback 1' },
-                { src: '', alt: 'Fallback 2' }
-              ];
-            }
-            break;
-          default:
-            // Fallback to category1 images if the category is not found
-            categoryImages = [
-              { src: '', alt: 'Fallback 1' },
-              { src: '', alt: 'Fallback 2' }
-            ];
+        if (!categoryData) {
+          console.error(`No data found for ${categoryId}`);
+          setImages([]);
+          setLoading(false);
+          return;
         }
+
+        // Build image array with hero image first, then all other images
+        const categoryImages = [
+          { src: categoryData.heroImage, alt: `${displayName} Hero` },
+          ...categoryData.images.map((publicId, index) => ({
+            src: publicId,
+            alt: `${displayName} ${index + 1}`
+          }))
+        ];
         
         // Add a key to each image object
-        categoryImages = categoryImages.map((img, index) => ({
+        const imagesWithKeys = categoryImages.map((img, index) => ({
           ...img,
           key: `${categoryId}-image-${index}`
         }));
         
-        setImages(categoryImages);
+        setImages(imagesWithKeys);
         setLoading(false);
       } catch (error) {
         console.error('Error loading images:', error);
@@ -346,11 +154,11 @@ const CategoryDetail = () => {
     };
 
     loadCategoryImages();
-  }, [categoryId]);
+  }, [categoryId, categoryNames, cloudinaryIds]);
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
-    setShowHeader(false); // Hide header when viewing an image
+    setShowHeader(false);
   };
 
   const handlePrevImage = () => {
@@ -371,7 +179,7 @@ const CategoryDetail = () => {
 
   const closeImageView = () => {
     setSelectedImage(null);
-    setShowHeader(true); // Show header again when closing image view
+    setShowHeader(true);
   };
 
   if (loading) {
@@ -399,8 +207,8 @@ const CategoryDetail = () => {
             <button className="nav-button prev-button" onClick={handlePrevImage}>
               &#10094;
             </button>
-            <img 
-              src={images[selectedImage].src} 
+            <CLDBlurImage 
+              publicId={images[selectedImage].src} 
               alt={images[selectedImage].alt} 
               className="fullscreen-image"
             />

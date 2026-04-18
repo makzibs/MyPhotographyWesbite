@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CLDBlurImage from './Image';
 import './MasonryGrid.css';
 
 const MasonryGrid = ({ categories }) => {
@@ -7,8 +8,8 @@ const MasonryGrid = ({ categories }) => {
     <div className="masonry-grid">
       {categories.map((category) => (
         <Link key={category.id} to={`/category/${category.id}`} className="masonry-item">
-          <img 
-            src={category.heroImage} 
+          <CLDBlurImage 
+            publicId={category.heroImage} 
             alt={category.name} 
             className="masonry-image"
           />

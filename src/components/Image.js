@@ -3,7 +3,7 @@ import { CloudinaryImage } from "@cloudinary/url-gen";
 
 const CLDBlurImage = ({
   publicId,
-  cloudName = "dtbxzwwfj", 
+  cloudName = "dtz8zyqhy", 
   width = "100%",            
   height = "auto",
   className = "",            

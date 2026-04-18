@@ -23,11 +23,32 @@ const CategoryGrid = () => {
     'category18': "Robin's Birthday"
   };
   
-  // Create categories array with proper hero images from each category folder
+  // Cloudinary hero image IDs for each category
+  const heroImages = {
+    'category1': 'heroImage_ff71wp',
+    'category2': 'heroImage_nn8ese',
+    'category3': 'heroImage_a4oqtm',
+    'category4': 'heroImage_wdvsq6',
+    'category5': 'heroImage_uqzpeu',
+    'category6': 'heroImage_ncz8lv',
+    'category7': 'heroImage_emhaom',
+    'category8': 'heroImage_s2pkna',
+    'category9': 'heroImage_wl9nzk',
+    'category10': 'heroImage_yq7p8o',
+    'category11': 'heroImage_gqibxa',
+    'category12': 'heroImage_lktku1',
+    'category13': 'heroImage_vyixzg',
+    'category15': 'heroImage_jowgqh',
+    'category16': 'heroImage_ff71wp',
+    'category17': 'heroImage_nn8ese',
+    'category18': 'heroImage_u8jvq7'
+  };
+  
+  // Create categories array with Cloudinary hero images
   const categories = Object.keys(categoryNames).map(categoryId => ({
     id: categoryId,
     name: categoryNames[categoryId],
-    heroImage:''
+    heroImage: heroImages[categoryId]
   }));
 
   return (

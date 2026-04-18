@@ -1,15 +1,13 @@
 import React from 'react';
+import CLDBlurImage from './Image';
 import './About.css';
 
 const About = () => {
-  // Import the image properly using require
-  const portraitImage = require('../assets/images/Photographer-Images/Portrait-BW.jpg');
-  
   return (
     <div className="about-container">
       <div className="about-content">
         <div className="about-image">
-          <img src={portraitImage} alt="MAKZIBS" />
+          <CLDBlurImage publicId="Portrait-BW_j7gtz6" alt="MAKZIBS" />
         </div>
         
         <div className="about-text-section">
