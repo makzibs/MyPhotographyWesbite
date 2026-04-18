@@ -3,7 +3,7 @@ import { CloudinaryImage } from "@cloudinary/url-gen";
 
 const CLDBlurImage = ({
   publicId,
-  cloudName = "dtz8zyqhy", 
+  cloudName = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME || "dtz8zyqhy", 
   width = "100%",            
   height = "auto",
   className = "",            
