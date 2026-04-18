@@ -101,7 +101,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 .fullscreen-container {
@@ -109,34 +109,40 @@
   max-width: 90%;
   max-height: 90%;
   z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fullscreen-image {
-  max-width: 90%;
+  max-width: 100%;
   max-height: 90vh;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .prev-button {
@@ -152,10 +158,15 @@
   top: -40px;
   right: 0;
   background-color: transparent;
-  color: white;
+  color: #333;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #000;
 }
 
 /* Responsive adjustments */
