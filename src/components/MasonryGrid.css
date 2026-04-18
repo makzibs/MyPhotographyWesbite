@@ -11,9 +11,11 @@
 
 /* Special styling for category detail view */
 .category-detail .masonry-grid {
-  padding: 0 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  column-gap: 20px;
+  background-color: #ffffff;
 }
 
 .masonry-item {
@@ -30,6 +32,11 @@
   box-sizing: border-box;
   border-radius: 0;
   box-shadow: none !important;
+}
+
+/* More spacing for category detail items */
+.category-detail .masonry-item {
+  margin-bottom: 20px;
 }
 
 .masonry-image {
@@ -106,8 +113,17 @@
     padding: 0 8px;
   }
   
+  .category-detail .masonry-grid {
+    padding: 15px;
+    column-gap: 15px;
+  }
+  
   .masonry-item {
     margin-bottom: 8px;
+  }
+  
+  .category-detail .masonry-item {
+    margin-bottom: 15px;
   }
   
   .masonry-title {
@@ -122,8 +138,17 @@
     padding: 0 6px;
   }
   
+  .category-detail .masonry-grid {
+    padding: 10px;
+    column-gap: 10px;
+  }
+  
   .masonry-item {
     margin-bottom: 6px;
+  }
+  
+  .category-detail .masonry-item {
+    margin-bottom: 10px;
   }
   
   .masonry-overlay {
