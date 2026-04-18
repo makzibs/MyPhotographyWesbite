@@ -61,7 +61,6 @@
 /* Category detail page now uses the masonry layout from MasonryGrid.css */
 .category-detail .masonry-grid {
   margin-top: 40px;
-  padding: 0;
   width: 100%;
   max-width: 100%;
 }
