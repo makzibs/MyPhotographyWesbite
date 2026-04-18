@@ -36,7 +36,17 @@
 
 /* More spacing for category detail items */
 .category-detail .masonry-item {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
+  padding-bottom: 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Ensure images have proper spacing */
+.category-detail .masonry-image {
+  display: block;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .masonry-image {
