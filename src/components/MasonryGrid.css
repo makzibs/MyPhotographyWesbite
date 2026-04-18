@@ -12,6 +12,7 @@
 /* Special styling for category detail view */
 .category-detail .masonry-grid {
   padding: 20px;
+  padding-bottom: 60px;
   max-width: 1200px;
   margin: 0 auto;
   column-gap: 20px;
@@ -125,6 +126,7 @@
   
   .category-detail .masonry-grid {
     padding: 15px;
+    padding-bottom: 50px;
     column-gap: 15px;
   }
   
@@ -150,6 +152,7 @@
   
   .category-detail .masonry-grid {
     padding: 10px;
+    padding-bottom: 40px;
     column-gap: 10px;
   }
   
