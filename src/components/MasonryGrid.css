@@ -97,6 +97,25 @@
   transform: scale(1);
 }
 
+/* Constrain image height in category detail for better viewport fit */
+.category-detail .masonry-image {
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* Adjust max-height based on column count for optimal viewing */
+.category-detail .masonry-grid-1col .masonry-image {
+  max-height: 80vh;
+}
+
+.category-detail .masonry-grid-2col .masonry-image {
+  max-height: 65vh;
+}
+
+.category-detail .masonry-grid-3col .masonry-image {
+  max-height: 60vh;
+}
+
 .masonry-item:hover .masonry-image {
   transform: scale(1.05);
 }
@@ -173,6 +192,16 @@
   .masonry-title {
     font-size: 0.9rem;
   }
+  
+  /* Adjust image heights for tablet */
+  .category-detail .masonry-grid-1col .masonry-image {
+    max-height: 70vh;
+  }
+  
+  .category-detail .masonry-grid-2col .masonry-image,
+  .category-detail .masonry-grid-3col .masonry-image {
+    max-height: 55vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -215,5 +244,15 @@
   .masonry-title {
     font-size: 0.8rem;
     letter-spacing: 1px;
+  }
+  
+  /* Adjust image heights for mobile */
+  .category-detail .masonry-grid-1col .masonry-image,
+  .category-detail .masonry-grid-2col .masonry-image {
+    max-height: 60vh;
+  }
+  
+  .category-detail .masonry-grid-3col .masonry-image {
+    max-height: 50vh;
   }
 }
