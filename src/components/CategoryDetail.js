@@ -38,7 +38,7 @@ const CategoryDetail = () => {
   const cloudinaryIds = useMemo(() => ({
     category1: {
       heroImage: 'heroImage1',
-      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '1.5_jzrta9']
+      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j']
     },
     category2: {
       heroImage: 'heroImage2',
@@ -46,19 +46,19 @@ const CategoryDetail = () => {
     },
     category3: {
       heroImage: 'heroImage3',
-      images: ['3.1_leliwh', '3.2_wmsbqt', '3.3_n3xrgy']
+      images: ['3.1_leliwh', '3.2_wmsbqt']
     },
     category4: {
       heroImage: 'heroImage4',
-      images: ['4.4_subfc0', '4.5_vfpwyh', '4.7_piklfe', '4.8_xaovzy', '4.9_qicgcx']
+      images: ['4.1_abc123', '4.2_def456', '4.3_ghi789', '4.4_subfc0', '4.6_jkl012', '4.7_piklfe', '4.8_xaovzy']
     },
     category5: {
       heroImage: 'heroImage5',
-      images: ['5.1_nhxw7a', '5.2_xj9hqm', '5.3_md2ztf', '5.4_m0iynv', '5.5_cs8g4q']
+      images: ['5.1_nhxw7a', '5.2_xj9hqm']
     },
     category6: {
       heroImage: 'heroImage6',
-      images: ['6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+      images: ['6.1_mno345', '6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
     },
     category7: {
       heroImage: 'heroImage7',
@@ -78,11 +78,11 @@ const CategoryDetail = () => {
     },
     category11: {
       heroImage: 'heroImage11',
-      images: ['11.1_zsknhs', '11.2_vrnpx0', '11.4_ufmjo7']
+      images: ['11.1_zsknhs', '11.2_vrnpx0']
     },
     category12: {
       heroImage: 'heroImage12',
-      images: ['12.1_f0jgxj', '12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux']
+      images: ['12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux']
     },
     category13: {
       heroImage: 'heroImage13',
@@ -94,11 +94,11 @@ const CategoryDetail = () => {
     },
     category15: {
       heroImage: 'heroImage15',
-      images: ['15.1_upsjpd', '15.2_tth0w9']
+      images: ['15.1_upsjpd']
     },
     category16: {
       heroImage: 'heroImage16',
-      images: []
+      images: ['16.1_pqr678', '16.2_stu901', '16.3_vwx234', '16.4_yz5678']
     },
     category17: {
       heroImage: 'heroImage17',
