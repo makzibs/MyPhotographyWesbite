@@ -50,7 +50,7 @@ const CategoryDetail = () => {
     },
     category4: {
       heroImage: 'heroImage4',
-      images: ['4.1_abc123', '4.2_def456', '4.3_ghi789', '4.4_subfc0', '4.6_jkl012', '4.7_piklfe', '4.8_xaovzy']
+      images: ['4.4_subfc0', '4.7_piklfe', '4.8_xaovzy']
     },
     category5: {
       heroImage: 'heroImage5',
@@ -58,7 +58,7 @@ const CategoryDetail = () => {
     },
     category6: {
       heroImage: 'heroImage6',
-      images: ['6.1_mno345', '6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+      images: ['6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
     },
     category7: {
       heroImage: 'heroImage7',
@@ -98,7 +98,7 @@ const CategoryDetail = () => {
     },
     category16: {
       heroImage: 'heroImage16',
-      images: ['16.1_pqr678', '16.2_stu901', '16.3_vwx234', '16.4_yz5678']
+      images: []
     },
     category17: {
       heroImage: 'heroImage17',
