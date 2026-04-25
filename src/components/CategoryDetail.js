@@ -36,8 +36,8 @@ const CategoryDetail = () => {
     },
     category3: {
       folder: 'category3-people & lifestyle',
-      heroImage: 'heroImage14.jpg',
-      images: ['2.3.jpg', '2.4.jpg', '3.8.jpg', '6.8.jpg', '8.1.jpg', '8.2.jpg', '14.1.jpg', '15.1.jpg', '16.4.jpg', 'DSC06044.jpg', 'DSC06047.jpg', 'DSC08985.jpg']
+      heroImage: 'heroImage3.jpg',
+      images: ['2.3.jpg', '2.4.jpg', '3.5.jpg', '3.8.jpg', '6.8.jpg', '8.1.jpg', '8.2.jpg', '14.1.jpg', '15.1.jpg', '16.4.jpg', 'DSC06044.jpg', 'DSC06047.jpg', 'DSC08985.jpg']
     },
     category4: {
       folder: 'category4-wedding',
