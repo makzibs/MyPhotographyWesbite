@@ -27,31 +27,31 @@ const CategoryDetail = () => {
   const cloudinaryIds = useMemo(() => ({
     category1: {
       heroImage: 'heroImage1',
-      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '1.5_jzrta9']
+      images: ['1.1', '1.2', '1.3', '1.4', '1.5']
     },
     category2: {
       heroImage: 'heroImage2',
-      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is']
+      images: ['2.1', '2.2', '2.3']
     },
     category3: {
       heroImage: 'heroImage3',
-      images: ['2.3_wdigqw', '2.4_gjn7is', '6.8_znn3ym', '8.1_hl4gkh', '8.2_prvvoj', '10.1_vmjxcq', '14.1_dedgec', '15.1_upsjpd', '16.4']
+      images: ['2.3', '2.4', '6.8', '8.1', '8.2', '10.1', '14.1', '15.1', '16.4']
     },
     category4: {
       heroImage: 'heroImage4',
-      images: ['4.1', '4.2', '4.3', '4.4_subfc0', '4.5_vfpwyh', '4.6', '4.7_piklfe', '4.8_xaovzy', '4.9_qicgcx']
+      images: ['4.1', '4.2', '4.4', '4.5', '4.6', '4.7', '4.8']
     },
     category5: {
       heroImage: 'heroImage5',
-      images: ['5.1_nhxw7a', '5.2_xj9hqm', '5.3_md2ztf', '5.4_m0iynv', '5.5_cs8g4q']
+      images: ['5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7']
     },
     category6: {
       heroImage: 'heroImage6',
-      images: ['6.1', '6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+      images: ['6.1', '6.2', '6.3', '6.4', '6.5', '6.7', '6.10']
     },
     category7: {
       heroImage: 'heroImage7',
-      images: ['7.2_pg892a', '7.3_nyzdyq']
+      images: ['7.4', '7.5']
     }
   }), []);
 
