@@ -31,8 +31,10 @@ const CategoryGrid = () => {
     'category7': hero7
   };
   
-  // Create categories array with local hero images
-  const categories = Object.keys(categoryNames).map(categoryId => ({
+  // Create categories array with custom order
+  const categoryOrder = ['category6', 'category4', 'category1', 'category3', 'category5', 'category2', 'category7'];
+  
+  const categories = categoryOrder.map(categoryId => ({
     id: categoryId,
     name: categoryNames[categoryId],
     heroImage: heroImages[categoryId],
