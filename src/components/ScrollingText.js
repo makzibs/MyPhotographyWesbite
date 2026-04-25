@@ -1,7 +1,5 @@
 import React from 'react';
 import './ScrollingText.css';
-// Import the Cinzel font
-import '@fontsource/cinzel';
 
 const ScrollingText = () => {
   // Single photography quote
