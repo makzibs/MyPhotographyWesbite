@@ -2,10 +2,10 @@ import './CategoryGrid.css';
 import MasonryGrid from './MasonryGrid';
 import hero1 from '../assets/images/category1-golden-hour-portraits/heroImage1.jpg';
 import hero2 from '../assets/images/category2-studio-portraits/heroImage2.jpg';
-import hero3 from '../assets/images/category3-people-lifestyle/heroImage3.jpg';
-import hero4 from '../assets/images/category4-wedding-photography/heroImage4.jpg';
+import hero3 from '../assets/images/category3-people & lifestyle/heroImage3.jpg';
+import hero4 from '../assets/images/category4-wedding/heroImage4.jpg';
 import hero5 from '../assets/images/category5-event-photography/heroImage5.jpg';
-import hero6 from '../assets/images/category6-all portraits/heroImage6.jpg';
+import hero6 from '../assets/images/category6-all time portraits/heroImage6.jpg';
 import hero7 from '../assets/images/category7-cities and nature/heroImage7.jpg';
 
 const CategoryGrid = () => {
@@ -13,10 +13,10 @@ const CategoryGrid = () => {
   const categoryNames = {
     'category1': 'Golden Hour Portraits',
     'category2': 'Studio Portraits',
-    'category3': 'People Lifestyle',
-    'category4': 'Wedding Photography',
+    'category3': 'People & Lifestyle',
+    'category4': 'Wedding',
     'category5': 'Event Photography',
-    'category6': 'All Portraits',
+    'category6': 'All Time Portraits',
     'category7': 'Cities and Nature'
   };
   
