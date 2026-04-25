@@ -14,99 +14,39 @@ const CategoryDetail = () => {
 
   // Map of category IDs to display names
   const categoryNames = useMemo(() => ({
-    'category1': 'Studio Portraits',
-    'category2': 'Sunflower Portraits',
-    'category3': 'Dark Ambience',
-    'category4': 'Vibrant City',
-    'category5': 'Sun and Shade',
-    'category6': 'Collections from now and then',
-    'category7': 'Lake and Nature',
-    'category8': 'Sunset',
-    'category9': 'Impromptu Portrait',
-    'category10': 'Let kids have fun',
-    'category11': 'Creative Shots',
-    'category12': 'Wedding Shots',
-    'category13': 'Home Food',
-    'category14': 'Quick Family portrait',
-    'category15': 'Guys from Pasila street',
-    'category16': 'Sunset Portraits',
-    'category17': 'Meevan Weaning Ceremony',
-    'category18': "Robin's Birthday"
+    category1: 'Golden Hour Portraits',
+    category2: 'Studio Portraits',
+    category3: 'Family & Lifestyle',
+    category4: 'Wedding Photography',
+    category5: 'Event Photography',
+    category6: 'Creative Portraits'
   }), []);
 
   // Cloudinary public IDs for all categories
   const cloudinaryIds = useMemo(() => ({
     category1: {
-      heroImage: 'heroImage1',
-      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j']
+      heroImage: 'heroImage2',
+      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is', '16.1', '16.2', '16.3', '16.4', 'heroImage16']
     },
     category2: {
-      heroImage: 'heroImage2',
-      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is']
+      heroImage: 'heroImage1',
+      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '3.1_leliwh', '3.2_wmsbqt']
     },
     category3: {
-      heroImage: 'heroImage3',
-      images: ['3.1_leliwh', '3.2_wmsbqt']
+      heroImage: 'heroImage9',
+      images: ['9.1', '9.1_rtv12t', '10.1_vmjxcq', '14.1_dedgec', '6.1', '6.2_m7nhrl']
     },
     category4: {
-      heroImage: 'heroImage4',
-      images: ['4.1', '4.2', '4.3', '4.4_subfc0', '4.6', '4.7_piklfe', '4.8_xaovzy']
+      heroImage: 'heroImage12',
+      images: ['12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t']
     },
     category5: {
-      heroImage: 'heroImage5',
-      images: ['5.1_nhxw7a', '5.2_xj9hqm']
+      heroImage: 'heroImage17',
+      images: ['17.1_dwghbw', '17.2_f95eqa', '17.3_dkzivr', '17.4_qmg0nb', '18.1_ihjvhf', '18.2_ds5fqo', '18.3_eukgkl', '18.4_mjtylu']
     },
     category6: {
-      heroImage: 'heroImage6',
-      images: ['6.1', '6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
-    },
-    category7: {
-      heroImage: 'heroImage7',
-      images: ['7.2_pg892a', '7.3_nyzdyq']
-    },
-    category8: {
-      heroImage: 'heroImage8',
-      images: ['8.1_hl4gkh', '8.2_prvvoj']
-    },
-    category9: {
-      heroImage: 'heroImage9',
-      images: ['9.1', '9.1_rtv12t']
-    },
-    category10: {
-      heroImage: 'heroImage10',
-      images: ['10.1_vmjxcq']
-    },
-    category11: {
       heroImage: 'heroImage11',
-      images: ['11.1_zsknhs', '11.2_vrnpx0']
-    },
-    category12: {
-      heroImage: 'heroImage12',
-      images: ['12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux']
-    },
-    category13: {
-      heroImage: 'heroImage13',
-      images: ['13.1_xdxai0', '13.2_fatdmj']
-    },
-    category14: {
-      heroImage: 'heroImage14',
-      images: ['14.1_dedgec']
-    },
-    category15: {
-      heroImage: 'heroImage15',
-      images: ['15.1_upsjpd']
-    },
-    category16: {
-      heroImage: 'heroImage16',
-      images: ['16.1', '16.2', '16.3', '16.4']
-    },
-    category17: {
-      heroImage: 'heroImage17',
-      images: ['17.1_dwghbw', '17.2_f95eqa', '17.3_dkzivr', '17.4_qmg0nb']
-    },
-    category18: {
-      heroImage: 'heroImage18',
-      images: ['18.1_ihjvhf', '18.2_ds5fqo', '18.3_eukgkl', '18.4_mjtylu']
+      images: ['11.1_zsknhs', '11.2_vrnpx0', '4.1', '4.2', '4.3', '5.1_nhxw7a', '7.2_pg892a', '8.1_hl4gkh', '13.1_xdxai0', '15.1_upsjpd', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
     }
   }), []);
 
