@@ -26,31 +26,31 @@ const CategoryDetail = () => {
   // Cloudinary public IDs for all categories
   const cloudinaryIds = useMemo(() => ({
     category1: {
-      heroImage: 'heroImage1',
+      heroImage: 'heroImage1?v=2',
       images: ['1.1', '1.2', '1.3', '1.4', '1.5']
     },
     category2: {
-      heroImage: 'heroImage2',
+      heroImage: 'heroImage2?v=2',
       images: ['2.1', '2.2', '2.3']
     },
     category3: {
-      heroImage: 'heroImage3',
+      heroImage: 'heroImage3?v=2',
       images: ['2.3', '2.4', '6.8', '8.1', '8.2', '10.1', '14.1', '15.1', '16.4']
     },
     category4: {
-      heroImage: 'heroImage4',
+      heroImage: 'heroImage4?v=2',
       images: ['4.1', '4.2', '4.4', '4.5', '4.6', '4.7', '4.8']
     },
     category5: {
-      heroImage: 'heroImage5',
+      heroImage: 'heroImage5?v=2',
       images: ['5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7']
     },
     category6: {
-      heroImage: 'heroImage6',
+      heroImage: 'heroImage6?v=2',
       images: ['6.1', '6.2', '6.3', '6.4', '6.5', '6.7', '6.10']
     },
     category7: {
-      heroImage: 'heroImage7',
+      heroImage: 'heroImage7?v=2',
       images: ['7.4', '7.5']
     }
   }), []);
