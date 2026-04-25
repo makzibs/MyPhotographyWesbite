@@ -27,7 +27,7 @@ const CategoryDetail = () => {
     category1: {
       folder: 'category1-golden-hour-portraits',
       heroImage: 'heroImage1.jpg',
-      images: ['1.1.jpg', '1.2.jpg', '1.3.jpg', '1.4.jpg', '1.5.jpg']
+      images: ['1.1.jpg', '1.2.jpg', '1.3.jpg', '1.4.jpg', '1.5.jpg', 'DSC09315.jpg', 'DSC09316-2.jpg']
     },
     category2: {
       folder: 'category2-studio-portraits',
@@ -42,22 +42,22 @@ const CategoryDetail = () => {
     category4: {
       folder: 'category4-wedding-photography',
       heroImage: 'heroImage4.jpg',
-      images: ['4.1.jpg', '4.2.jpg', '4.4.jpg', '4.5.jpg', '4.6.jpg', '4.7.jpg', '4.8.jpg']
+      images: ['4.1.jpg', '4.2.jpg', '4.4.jpg', '4.5.jpg', '4.6.jpg', '4.7.jpg', '4.8.jpg', 'DSC02437-2.jpg']
     },
     category5: {
       folder: 'category5-event-photography',
       heroImage: 'heroImage5.jpg',
-      images: ['5.1.jpg', '5.2.jpg', '5.3.jpg', '5.4.jpg', '5.5.jpg', '5.6.jpg', '5.7.jpg']
+      images: ['5.1.jpg', '5.2.jpg', '5.3.jpg', '5.4.jpg', '5.5.jpg', '5.6.jpg', '5.7.jpg', 'DSC00001.jpg', 'DSC09736.jpg', 'DSC09830.jpg', 'DSC09881.jpg', 'DSC09886.jpg', 'DSC09974.jpg']
     },
     category6: {
       folder: 'category6-all portraits',
       heroImage: 'heroImage6.jpg',
-      images: ['6.1.jpg', '6.2.jpg', '6.3.jpg', '6.4.jpg', '6.5.jpg', '6.7.jpg', '6.10.jpg']
+      images: ['6.1.jpg', '6.2.jpg', '6.3.jpg', '6.4.jpg', '6.5.jpg', '6.6.jpg', '6.7.jpg', '6.8.jpg', '6.10.jpg']
     },
     category7: {
       folder: 'category7-cities and nature',
       heroImage: 'heroImage7.jpg',
-      images: ['7.1.jpg', '7.2.jpg', '7.3.jpg', '7.4.jpg', '7.5.jpg', '7.6.jpg']
+      images: ['7.1.jpg', '7.2.jpg', '7.3.jpg', '7.4.jpg', '7.5.jpg', '7.6.jpg', '7.7.jpg']
     }
   }), []);
 
