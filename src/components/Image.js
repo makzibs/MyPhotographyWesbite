@@ -17,7 +17,7 @@ const CLDBlurImage = ({
   return (
     <AdvancedImage
       cldImg={img}
-      plugins={[placeholder({ mode: "predominant-color" }), responsive()]}
+      plugins={[placeholder({ mode: "blur" }), responsive()]}
       style={{ width, height }}
       className={className}
     />
