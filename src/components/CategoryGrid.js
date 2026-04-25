@@ -15,7 +15,7 @@ const CategoryGrid = () => {
     'category2': 'Studio Portraits',
     'category3': 'People & Lifestyle',
     'category4': 'Wedding',
-    'category5': 'Event Photography',
+    'category5': 'Event',
     'category6': 'All Time Portraits',
     'category7': 'Cities and Nature'
   };
