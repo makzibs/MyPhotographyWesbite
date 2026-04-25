@@ -6,20 +6,22 @@ const CategoryGrid = () => {
   const categoryNames = {
     'category1': 'Golden Hour Portraits',
     'category2': 'Studio Portraits',
-    'category3': 'Family & Lifestyle',
+    'category3': 'People Lifestyle',
     'category4': 'Wedding Photography',
     'category5': 'Event Photography',
-    'category6': 'Creative Portraits'
+    'category6': 'All Portraits',
+    'category7': 'Cities and Nature'
   };
   
   // Cloudinary hero image IDs for each category
   const heroImages = {
-    'category1': 'heroImage2',
-    'category2': 'heroImage1',
-    'category3': 'heroImage9',
-    'category4': 'heroImage12',
-    'category5': 'heroImage17',
-    'category6': 'heroImage11'
+    'category1': 'heroImage1',
+    'category2': 'heroImage2',
+    'category3': 'heroImage3',
+    'category4': 'heroImage4',
+    'category5': 'heroImage5',
+    'category6': 'heroImage6',
+    'category7': 'heroImage7'
   };
   
   // Create categories array with Cloudinary hero images

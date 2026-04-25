@@ -16,37 +16,42 @@ const CategoryDetail = () => {
   const categoryNames = useMemo(() => ({
     category1: 'Golden Hour Portraits',
     category2: 'Studio Portraits',
-    category3: 'Family & Lifestyle',
+    category3: 'People Lifestyle',
     category4: 'Wedding Photography',
     category5: 'Event Photography',
-    category6: 'Creative Portraits'
+    category6: 'All Portraits',
+    category7: 'Cities and Nature'
   }), []);
 
   // Cloudinary public IDs for all categories
   const cloudinaryIds = useMemo(() => ({
     category1: {
-      heroImage: 'heroImage2',
-      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is', '16.1', '16.2', '16.3', '16.4', 'heroImage16']
+      heroImage: 'heroImage1',
+      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '1.5_jzrta9']
     },
     category2: {
-      heroImage: 'heroImage1',
-      images: ['1.1_uumegw', '1.2_n2iqyt', '1.3_vk0im7', '1.4_olfl4j', '3.1_leliwh', '3.2_wmsbqt']
+      heroImage: 'heroImage2',
+      images: ['2.1_nbifpq', '2.2_wry1xz', '2.3_wdigqw', '2.4_gjn7is']
     },
     category3: {
-      heroImage: 'heroImage9',
-      images: ['9.1', '9.1_rtv12t', '10.1_vmjxcq', '14.1_dedgec', '6.1', '6.2_m7nhrl']
+      heroImage: 'heroImage3',
+      images: ['2.3_wdigqw', '2.4_gjn7is', '6.8_znn3ym', '8.1_hl4gkh', '8.2_prvvoj', '10.1_vmjxcq', '14.1_dedgec', '15.1_upsjpd', '16.4']
     },
     category4: {
-      heroImage: 'heroImage12',
-      images: ['12.2_esjrv0', '12.3_joxmay', '12.4_tx9tux', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t']
+      heroImage: 'heroImage4',
+      images: ['4.1', '4.2', '4.3', '4.4_subfc0', '4.5_vfpwyh', '4.6', '4.7_piklfe', '4.8_xaovzy', '4.9_qicgcx']
     },
     category5: {
-      heroImage: 'heroImage17',
-      images: ['17.1_dwghbw', '17.2_f95eqa', '17.3_dkzivr', '17.4_qmg0nb', '18.1_ihjvhf', '18.2_ds5fqo', '18.3_eukgkl', '18.4_mjtylu']
+      heroImage: 'heroImage5',
+      images: ['5.1_nhxw7a', '5.2_xj9hqm', '5.3_md2ztf', '5.4_m0iynv', '5.5_cs8g4q']
     },
     category6: {
-      heroImage: 'heroImage11',
-      images: ['11.1_zsknhs', '11.2_vrnpx0', '4.1', '4.2', '4.3', '5.1_nhxw7a', '7.2_pg892a', '8.1_hl4gkh', '13.1_xdxai0', '15.1_upsjpd', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+      heroImage: 'heroImage6',
+      images: ['6.1', '6.2_m7nhrl', '6.3_p5kdof', '6.4_vljcvg', '6.5_jdl912', '6.6_ynhqly', '6.7_jzxn1t', '6.8_znn3ym', '6.9_lwctpa', '6.10_h0jt5v']
+    },
+    category7: {
+      heroImage: 'heroImage7',
+      images: ['7.2_pg892a', '7.3_nyzdyq']
     }
   }), []);
 
