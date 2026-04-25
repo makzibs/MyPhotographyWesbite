@@ -1,4 +1,4 @@
-import { AdvancedImage, lazyload, placeholder, responsive } from "@cloudinary/react";
+import { AdvancedImage, placeholder, responsive } from "@cloudinary/react";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 
 const CLDBlurImage = ({
@@ -17,7 +17,7 @@ const CLDBlurImage = ({
   return (
     <AdvancedImage
       cldImg={img}
-      plugins={[placeholder({ mode: "blur" }), lazyload({ rootMargin: '10px', threshold: 0.01 }), responsive()]}
+      plugins={[placeholder({ mode: "predominant-color" }), responsive()]}
       style={{ width, height }}
       className={className}
     />
