@@ -15,7 +15,7 @@ const CategoryGrid = () => {
     'category2': 'Studio Portraits',
     'category3': 'People & Lifestyle',
     'category4': 'Wedding',
-    'category5': 'Event',
+    'category5': 'Events',
     'category6': 'All Time Portraits',
     'category7': 'Cities and Nature'
   };
@@ -35,7 +35,7 @@ const CategoryGrid = () => {
   // Row 1: All Time, Wedding (middle), Studio
   // Row 2: Golden Hour, Event (middle), People & Lifestyle
   // Row 3: Cities and Nature
-  const categoryOrder = ['category6', 'category4', 'category2', 'category1', 'category5', 'category3', 'category7'];
+  const categoryOrder = ['category6', 'category2', 'category4', 'category1', 'category5', 'category3', 'category7'];
   
   const categories = categoryOrder.map(categoryId => ({
     id: categoryId,

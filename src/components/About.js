@@ -1,15 +1,10 @@
 import React from 'react';
-import CLDBlurImage from './Image';
 import './About.css';
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-content">
-        <div className="about-image">
-          <CLDBlurImage publicId="Portrait-BW_j7gtz6" alt="MAKZIBS" />
-        </div>
-        
         <div className="about-text-section">
           <h1 className="about-name">MAKZIBS <span className="about-lastname">PHOTOGRAPHY</span></h1>
           
