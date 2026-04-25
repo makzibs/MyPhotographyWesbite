@@ -32,8 +32,10 @@ const CategoryGrid = () => {
   };
   
   // Create categories array with custom order
-  // Order: All Time Portraits, Wedding, Golden Hour, People & Lifestyle, Event, Studio, Cities and Nature
-  const categoryOrder = ['category6', 'category4', 'category1', 'category3', 'category5', 'category2', 'category7'];
+  // Row 1: All Time, Wedding (middle), Studio
+  // Row 2: Golden Hour, Event (middle), People & Lifestyle
+  // Row 3: Cities and Nature
+  const categoryOrder = ['category6', 'category4', 'category2', 'category1', 'category5', 'category3', 'category7'];
   
   const categories = categoryOrder.map(categoryId => ({
     id: categoryId,
