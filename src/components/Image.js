@@ -13,7 +13,7 @@ const CLDBlurImage = ({
   const img = new CloudinaryImage(publicId, { cloudName })
     .setDeliveryType("upload")
     .format("auto")       
-    .quality("auto");     
+    .quality(100);     
   return (
     <AdvancedImage
       cldImg={img}
