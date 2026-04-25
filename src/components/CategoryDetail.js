@@ -70,7 +70,7 @@ const CategoryDetail = () => {
     },
     category9: {
       heroImage: 'heroImage9',
-      images: ['9.1_rtv12t']
+      images: ['9.1', '9.1_rtv12t']
     },
     category10: {
       heroImage: 'heroImage10',
