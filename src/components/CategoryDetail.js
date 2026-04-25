@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import CLDBlurImage from './Image';
 import './CategoryDetail.css';
 import CategoryDetailMasonry from './CategoryDetailMasonry';
 
@@ -23,35 +22,42 @@ const CategoryDetail = () => {
     category7: 'Cities and Nature'
   }), []);
 
-  // Cloudinary public IDs for all categories
-  const cloudinaryIds = useMemo(() => ({
+  // Local image paths for all categories
+  const localImages = useMemo(() => ({
     category1: {
-      heroImage: 'heroImage1?v=2',
-      images: ['1.1', '1.2', '1.3', '1.4', '1.5']
+      folder: 'category1-golden-hour-portraits',
+      heroImage: 'heroImage1.jpg',
+      images: ['1.1.jpg', '1.2.jpg', '1.3.jpg', '1.4.jpg', '1.5.jpg']
     },
     category2: {
-      heroImage: 'heroImage2?v=2',
-      images: ['2.1', '2.2', '2.3']
+      folder: 'category2-studio-portraits',
+      heroImage: 'heroImage2.jpg',
+      images: ['2.1.jpg', '2.2.jpg', '2.3.jpg']
     },
     category3: {
-      heroImage: 'heroImage3?v=2',
-      images: ['2.3', '2.4', '6.8', '8.1', '8.2', '10.1', '14.1', '15.1', '16.4']
+      folder: 'category3-people-lifestyle',
+      heroImage: 'heroImage3.jpg',
+      images: ['2.3.jpg', '2.4.jpg', '6.8.jpg', '8.1.jpg', '8.2.jpg', '10.1.jpg', '14.1.jpg', '15.1.jpg', '16.4.jpg']
     },
     category4: {
-      heroImage: 'heroImage4?v=2',
-      images: ['4.1', '4.2', '4.4', '4.5', '4.6', '4.7', '4.8']
+      folder: 'category4-wedding-photography',
+      heroImage: 'heroImage4.jpg',
+      images: ['4.1.jpg', '4.2.jpg', '4.4.jpg', '4.5.jpg', '4.6.jpg', '4.7.jpg', '4.8.jpg']
     },
     category5: {
-      heroImage: 'heroImage5?v=2',
-      images: ['5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7']
+      folder: 'category5-event-photography',
+      heroImage: 'heroImage5.jpg',
+      images: ['5.1.jpg', '5.2.jpg', '5.3.jpg', '5.4.jpg', '5.5.jpg', '5.6.jpg', '5.7.jpg']
     },
     category6: {
-      heroImage: 'heroImage6?v=2',
-      images: ['6.1', '6.2', '6.3', '6.4', '6.5', '6.7', '6.10']
+      folder: 'category6-all portraits',
+      heroImage: 'heroImage6.jpg',
+      images: ['6.1.jpg', '6.2.jpg', '6.3.jpg', '6.4.jpg', '6.5.jpg', '6.7.jpg', '6.10.jpg']
     },
     category7: {
-      heroImage: 'heroImage7?v=2',
-      images: ['7.4', '7.5']
+      folder: 'category7-cities and nature',
+      heroImage: 'heroImage7.jpg',
+      images: ['7.1.jpg', '7.2.jpg', '7.3.jpg', '7.4.jpg', '7.5.jpg', '7.6.jpg']
     }
   }), []);
 
@@ -64,8 +70,8 @@ const CategoryDetail = () => {
         const displayName = categoryNames[categoryId] || categoryId.replace(/^category/, 'Category ');
         setCategoryName(displayName);
         
-        // Get Cloudinary IDs for this category
-        const categoryData = cloudinaryIds[categoryId];
+        // Get local image data for this category
+        const categoryData = localImages[categoryId];
         
         if (!categoryData) {
           console.error(`No data found for ${categoryId}`);
@@ -76,10 +82,15 @@ const CategoryDetail = () => {
 
         // Build image array with hero image first, then all other images
         const categoryImages = [
-          { src: categoryData.heroImage, alt: `${displayName} Hero` },
-          ...categoryData.images.map((publicId, index) => ({
-            src: publicId,
-            alt: `${displayName} ${index + 1}`
+          { 
+            src: require(`../assets/images/${categoryData.folder}/${categoryData.heroImage}`), 
+            alt: `${displayName} Hero`,
+            isLocal: true
+          },
+          ...categoryData.images.map((filename, index) => ({
+            src: require(`../assets/images/${categoryData.folder}/${filename}`),
+            alt: `${displayName} ${index + 1}`,
+            isLocal: true
           }))
         ];
         
@@ -99,7 +110,7 @@ const CategoryDetail = () => {
     };
 
     loadCategoryImages();
-  }, [categoryId, categoryNames, cloudinaryIds]);
+  }, [categoryId, categoryNames, localImages]);
 
   const handleImageClick = (index) => {
     setSelectedImage(index);
@@ -152,8 +163,8 @@ const CategoryDetail = () => {
             <button className="nav-button prev-button" onClick={handlePrevImage}>
               &#10094;
             </button>
-            <CLDBlurImage 
-              publicId={images[selectedImage].src} 
+            <img 
+              src={images[selectedImage].src} 
               alt={images[selectedImage].alt} 
               className="fullscreen-image"
             />

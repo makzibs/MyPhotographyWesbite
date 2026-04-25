@@ -1,5 +1,12 @@
 import './CategoryGrid.css';
 import MasonryGrid from './MasonryGrid';
+import hero1 from '../assets/images/category1-golden-hour-portraits/heroImage1.jpg';
+import hero2 from '../assets/images/category2-studio-portraits/heroImage2.jpg';
+import hero3 from '../assets/images/category3-people-lifestyle/heroImage3.jpg';
+import hero4 from '../assets/images/category4-wedding-photography/heroImage4.jpg';
+import hero5 from '../assets/images/category5-event-photography/heroImage5.jpg';
+import hero6 from '../assets/images/category6-all portraits/heroImage6.jpg';
+import hero7 from '../assets/images/category7-cities and nature/heroImage7.jpg';
 
 const CategoryGrid = () => {
   // Category names mapping
@@ -13,22 +20,23 @@ const CategoryGrid = () => {
     'category7': 'Cities and Nature'
   };
   
-  // Cloudinary hero image IDs for each category
+  // Local hero images for each category
   const heroImages = {
-    'category1': 'heroImage1',
-    'category2': 'heroImage2',
-    'category3': 'heroImage3',
-    'category4': 'heroImage4',
-    'category5': 'heroImage5',
-    'category6': 'heroImage6',
-    'category7': 'heroImage7'
+    'category1': hero1,
+    'category2': hero2,
+    'category3': hero3,
+    'category4': hero4,
+    'category5': hero5,
+    'category6': hero6,
+    'category7': hero7
   };
   
-  // Create categories array with Cloudinary hero images
+  // Create categories array with local hero images
   const categories = Object.keys(categoryNames).map(categoryId => ({
     id: categoryId,
     name: categoryNames[categoryId],
-    heroImage: heroImages[categoryId]
+    heroImage: heroImages[categoryId],
+    isLocal: true
   }));
 
   return (
