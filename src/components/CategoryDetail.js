@@ -37,7 +37,7 @@ const CategoryDetail = () => {
     category3: {
       folder: 'category3-people-and-lifestyle',
       heroImage: 'heroImage3.JPG',
-      images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.5.jpg', '3.8.jpg', '2.3.jpg', '2.4.jpg', '8.1.jpg', '8.2.jpg', '14.1.jpg', '15.1.jpg', '16.4.jpg', 'DSC06044.jpg', 'DSC06047.jpg', 'DSC08985.jpg']
+      images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.4.jpg', '3.5.jpg', '3.6.jpg', '3.7.jpg', '3.8.jpg', '3.9.jpg', '3.10.jpg', '3.11.jpg', '3.12.jpg', '3.13.jpg']
     },
     category4: {
       folder: 'category4-wedding',
@@ -47,12 +47,12 @@ const CategoryDetail = () => {
     category5: {
       folder: 'category5-event-photography',
       heroImage: 'heroImage5.jpg',
-      images: ['5.1.jpg', '5.2.jpg', '5.3.jpg', '5.4.jpg', '5.5.jpg', '5.6.jpg', '5.7.jpg', 'DSC00001.jpg', 'DSC09736.jpg', 'DSC09830.jpg', 'DSC09881.jpg', 'DSC09886.jpg', 'DSC09974.jpg']
+      images: ['5.1.jpg', '5.2.jpg', '5.3.jpg', '5.4.jpg', '5.5.jpg', '5.6.jpg', '5.7.jpg', '5.8.jpg', '5.9.jpg', '5.10.jpg', '5.11.jpg', '5.12.jpg', '5.13.jpg']
     },
     category6: {
       folder: 'category6-all time portraits',
       heroImage: 'heroImage6.jpg',
-      images: ['6.1.jpg', '6.2.jpg', '6.3.jpg', '6.4.jpg', '6.5.jpg', '6.6.jpg', '6.7.jpg', '6.8.jpg', '6.10.jpg']
+      images: ['6.1.jpg', '6.2.jpg', '6.3.jpg', '6.4.jpg', '6.5.jpg', '6.6.jpg', '6.7.jpg', '6.8.jpg']
     },
     category7: {
       folder: 'category7-cities and nature',
