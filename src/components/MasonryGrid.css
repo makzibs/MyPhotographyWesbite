@@ -102,6 +102,16 @@
   height: auto;
 }
 
+/* Limit image width in 1-col and 2-col layouts to prevent oversized images */
+.category-detail .masonry-grid-1col .masonry-image {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.category-detail .masonry-grid-2col .masonry-image {
+  max-width: 500px;
+}
+
 .masonry-item:hover .masonry-image {
   transform: scale(1.05);
 }
