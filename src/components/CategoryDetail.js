@@ -35,7 +35,7 @@ const CategoryDetail = () => {
       images: ['2.1.jpg', '2.2.jpg', '2.3.jpg']
     },
     category3: {
-      folder: 'category3-people & lifestyle',
+      folder: 'category3-people-and-lifestyle',
       heroImage: 'heroImage3.JPG',
       images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.5.jpg', '3.8.jpg', '2.3.jpg', '2.4.jpg', '8.1.jpg', '8.2.jpg', '14.1.jpg', '15.1.jpg', '16.4.jpg', 'DSC06044.jpg', 'DSC06047.jpg', 'DSC08985.jpg']
     },
