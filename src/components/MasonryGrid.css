@@ -11,8 +11,7 @@
 
 /* Special styling for category detail view */
 .category-detail .masonry-grid {
-  padding: 20px;
-  padding-bottom: 60px;
+  padding: 8px 20px 60px;
   max-width: 1200px;
   margin: 0 auto;
   column-gap: 12px;
