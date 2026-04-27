@@ -21,17 +21,23 @@
 
 /* Dynamic column layouts based on image count */
 .category-detail .masonry-grid-1col {
-  column-count: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-count: unset;
   max-width: 600px;
 }
 
 .category-detail .masonry-grid-2col {
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-count: unset;
   max-width: 900px;
 }
 
 .category-detail .masonry-grid-3col {
-  column-count: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-count: unset;
   max-width: 1200px;
 }
 
@@ -171,17 +177,17 @@
   
   /* Responsive column layouts */
   .category-detail .masonry-grid-1col {
-    column-count: 1;
+    grid-template-columns: 1fr;
     max-width: 500px;
   }
   
   .category-detail .masonry-grid-2col {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 700px;
   }
   
   .category-detail .masonry-grid-3col {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 700px;
   }
   
@@ -225,12 +231,12 @@
   /* All layouts become single column on small screens for better readability */
   .category-detail .masonry-grid-1col,
   .category-detail .masonry-grid-2col {
-    column-count: 1;
+    grid-template-columns: 1fr;
     max-width: 400px;
   }
   
   .category-detail .masonry-grid-3col {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
   }
   
