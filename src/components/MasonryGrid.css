@@ -209,8 +209,7 @@
   }
   
   .category-detail .masonry-grid {
-    padding: 10px;
-    padding-bottom: 40px;
+    padding: 8px 10px 40px;
     column-gap: 8px;
   }
   
