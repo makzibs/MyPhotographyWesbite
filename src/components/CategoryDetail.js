@@ -42,7 +42,7 @@ const CategoryDetail = () => {
     category4: {
       folder: 'category4-wedding',
       heroImage: 'heroImage4.jpg',
-      images: ['4.4.jpg', '4.5.jpg', '4.7.jpg', '4.8.jpg', '4.9.jpg', '4.10.JPG', '4.11.JPG', '4.12.JPG', '4.13.JPG', 'DSC09118.jpg']
+      images: ['4.4.jpg', '4.5.jpg', '4.7.jpg', '4.9.jpg', '4.10.JPG', '4.11.JPG', '4.12.JPG', '4.13.JPG', 'DSC09118.jpg']
     },
     category5: {
       folder: 'category5-event-photography',
