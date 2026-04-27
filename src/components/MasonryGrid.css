@@ -47,7 +47,6 @@
   margin-bottom: 10px;
   break-inside: avoid;
   position: relative;
-  overflow: hidden;
   transition: transform 0.3s ease;
   text-decoration: none;
   background: #fff !important;
