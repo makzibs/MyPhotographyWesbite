@@ -7,7 +7,8 @@ const CategoryDetailMasonry = ({ images, onImageClick }) => {
     const imageCount = images.length;
     if (imageCount === 1) return 'masonry-grid-1col';
     if (imageCount === 2) return 'masonry-grid-2col';
-    if (imageCount <= 4) return 'masonry-grid-2col';
+    if (imageCount === 3) return 'masonry-grid-1col';
+    if (imageCount === 4) return 'masonry-grid-2col';
     return 'masonry-grid-3col';
   };
 
