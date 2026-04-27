@@ -1,4 +1,5 @@
 import './MasonryGrid.css';
+import ProgressiveImage from './ProgressiveImage';
 
 const CategoryDetailMasonry = ({ images, onImageClick }) => {
   // Determine column count based on number of images
@@ -16,13 +17,12 @@ const CategoryDetailMasonry = ({ images, onImageClick }) => {
         <div 
           key={image.key || `image-${index}`} 
           className="masonry-item"
-          onClick={() => onImageClick(index)}
         >
-          <img 
-            src={image.src} 
-            alt={image.alt} 
+          <ProgressiveImage
+            src={image.src}
+            alt={image.alt}
             className="masonry-image"
-            loading="lazy"
+            onClick={() => onImageClick(index)}
           />
         </div>
       ))}
