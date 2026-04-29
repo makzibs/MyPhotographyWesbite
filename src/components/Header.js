@@ -55,7 +55,7 @@ const Header = () => {
             <li><Link to="/contact" onClick={toggleMenu}>CONTACT</Link></li>
           </ul>
           <div className="mobile-social-icon">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/makzibs_in_photo_and_video/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -73,7 +73,7 @@ const Header = () => {
       </nav>
       
       <div className="social-icon">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="centered-icon">
+        <a href="https://www.instagram.com/makzibs_in_photo_and_video/" target="_blank" rel="noopener noreferrer" className="centered-icon">
           <i className="fab fa-instagram"></i>
         </a>
       </div>
