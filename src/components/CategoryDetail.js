@@ -13,10 +13,10 @@ const CategoryDetail = () => {
 
   // Map of category IDs to display names
   const categoryNames = useMemo(() => ({
-    category1: 'Golden Hour Portraits',
+    category1: 'Outdoor Portraits',
     category2: 'Studio Portraits',
     category3: 'People & Lifestyle',
-    category4: 'Wedding',
+    category4: 'Weddings',
     category5: 'Events',
     category6: 'All Time Portraits',
     category7: 'Cities and Nature'
@@ -25,7 +25,7 @@ const CategoryDetail = () => {
   // Local image paths for all categories
   const localImages = useMemo(() => ({
     category1: {
-      folder: 'category1-golden-hour-portraits',
+      folder: 'category1-outdoor-portraits',
       heroImage: 'heroImage1.jpg',
       images: ['1.1.jpg', '1.2.jpg', '1.3.jpg', '1.4.jpg', '1.5.jpg', 'DSC09315.jpg', 'DSC09316-2.jpg']
     },
@@ -40,7 +40,7 @@ const CategoryDetail = () => {
       images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.4.jpg', '3.5.jpg', '3.6.jpg', '3.7.jpg', '3.8.jpg', '3.9.jpg', '3.10.jpg', '3.11.jpg', '3.12.jpg', '3.13.jpg']
     },
     category4: {
-      folder: 'category4-wedding',
+      folder: 'category4-weddings',
       heroImage: 'heroImage4.jpg',
       images: ['4.4.jpg', '4.5.jpg', '4.7.jpg', '4.9.jpg', '4.10.JPG', '4.11.JPG', '4.12.JPG', '4.13.JPG', 'DSC09118.jpg']
     },
