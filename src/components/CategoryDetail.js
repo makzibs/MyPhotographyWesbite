@@ -37,7 +37,7 @@ const CategoryDetail = () => {
     category3: {
       folder: 'category3-people-and-lifestyle',
       heroImage: 'heroImage3.JPG',
-      images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.4.jpg', '3.5.jpg', '3.6.jpg', '3.7.jpg', '3.8.jpg', '3.9.jpg', '3.10.jpg', '3.11.jpg', '3.12.jpg', '3.13.jpg']
+      images: ['3.1.JPG', '3.2.JPG', '3.3.jpg', '3.4.jpg', '3.5.jpg', '3.6.jpg', '3.7.jpg', '3.8.jpg', '3.9.jpg', '3.10.jpg', '3.11.jpg', '3.12.jpg', '3.13.jpg', '3.14.jpg', '3.15.jpg']
     },
     category4: {
       folder: 'category4-weddings',
@@ -57,7 +57,7 @@ const CategoryDetail = () => {
     category7: {
       folder: 'category7-cities and nature',
       heroImage: 'heroImage7.jpg',
-      images: ['7.1.jpg', '7.2.jpg', '7.3.jpg', '7.4.jpg', '7.5.jpg', '7.6.jpg', '7.7.jpg']
+      images: ['7.1.jpg', '7.2.jpg', '7.3.jpg', '7.4.jpg', '7.5.jpg', '7.6.jpg', '7.7.jpg', '7.8.jpg']
     }
   }), []);
 
